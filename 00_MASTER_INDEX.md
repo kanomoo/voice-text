@@ -16,37 +16,60 @@ C:\Project\Voice\
 │
 ├── 01_Innovative_Technopreneurs\                                 <-- วิชาผู้ประกอบการนวัตกรรม (โปรเจกต์ Smart Green Wall & Final Report)
 │   ├── README.md                                                 <-- สรุปวิชา, โปรเจกต์, กำหนดส่งงาน 1-2 ต.ค., เกณฑ์คะแนนเต็ม 28
-│   ├── Transcript_20260126_Customer_Validation.md                <-- ถอดความสัมภาษณ์ลูกค้า 2 ราย (ขนาด 3 แบบ, เตือน PM 2.5 ผ่านแอป)
-│   ├── Transcript_20260904_Final_Report_Guidelines.md            <-- ถอดความคำสั่งรายงาน 10 หัวข้อ, กฎ BMC 9 ช่องใน 1 หน้า, กลยุทธ์เทคโนโลยี
-│   └── Transcript_20260911_Risk_Management_Deadlines.md          <-- ถอดความเรื่องบริหารความเสี่ยง (ร้านกาแฟ), ย้ำเดดไลน์ PDF และคะแนน
+│   ├── Transcript_20260126_Customer_Validation.md                <-- บทวิเคราะห์สัมภาษณ์ลูกค้า 2 ราย
+│   ├── Transcript_20260904_Final_Report_Guidelines.md            <-- บทวิเคราะห์คำสั่งรายงาน 10 หัวข้อ, กฎ BMC
+│   ├── Transcript_20260911_Risk_Management_Deadlines.md          <-- บทวิเคราะห์เรื่องบริหารความเสี่ยง และคะแนน
+│   ├── 20260126_162937.txt                                       <-- [ถอดความละเอียดทุกคำพูด] สัมภาษณ์ลูกค้า #1 (ขนาด 3 แบบ, เตือน PM2.5)
+│   ├── 20260126_164100.txt                                       <-- [ถอดความละเอียดทุกคำพูด] สัมภาษณ์ลูกค้า #2 (ฟีดแบ็กห้าง/ออฟฟิศ)
+│   ├── 20260904_105814.txt                                       <-- [ถอดความละเอียดทุกคำพูด] สั่งรายงานเล่มจบ 10 หัวข้อ, กฎ BMC 1 หน้า
+│   └── In20260911_114230.txt                                     <-- [ถอดความละเอียดทุกคำพูด] การบริหารความเสี่ยงร้านกาแฟ, คะแนนเต็ม 28
 │
 ├── 02_Database_System\                                           <-- วิชาระบบฐานข้อมูล (Transaction, Lock Matrix, Recovery & Pop Quiz)
 │   ├── README.md                                                 <-- สรุปวิชา, ACID, Lock Matrix S/X, การกู้คืนระบบ, เฉลยควิซ
-│   ├── Transcript_20260908_130406_Transaction_Basics.md          <-- Part 1: ชนิดไฟล์ Master/Transaction, นิยาม Transaction, เคสโอนเงิน
-│   ├── Transcript_20260908_131052_Concurrency_ACID_Recovery.md  <-- Part 2: บรรยายหลัก ACID, Concurrency Control, 2PL, Soft/Hard Crash
-│   └── Transcript_20260908_143913_InClass_Quiz_ACID_Lock.md      <-- Part 3: ถอดความบรรยากาศสอบควิซกระทันหัน 2 ข้อ A4 หน้า-หลัง
+│   ├── Transcript_20260908_130406_Transaction_Basics.md          <-- บทวิเคราะห์ Part 1: แฟ้ม Master/Transaction
+│   ├── Transcript_20260908_131052_Concurrency_ACID_Recovery.md  <-- บทวิเคราะห์ Part 2: ACID, Concurrency, Recovery
+│   ├── Transcript_20260908_143913_InClass_Quiz_ACID_Lock.md      <-- บทวิเคราะห์ Part 3: ข้อสอบควิซในห้อง
+│   ├── 20260908_130406.txt                                       <-- [ถอดความละเอียดทุกคำพูด] Master/Transaction File, ธุรกรรมโอนเงิน
+│   ├── 20260908_131052.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บรรยายหลัก 67 นาที: ACID, 2PL, Lock Matrix
+│   ├── 20260908_143913.txt                                       <-- [ถอดความละเอียดทุกคำพูด] ควิซในห้อง A4 2 ข้อ (ACID & Log Crash)
+│   └── -.txt                                                     <-- [ถอดความละเอียดทุกคำพูด] ไฟล์ซ้ำตรงกับ 20260908_143913.txt
 │
 ├── 03_Data_Structures_and_Algorithms\                            <-- วิชาโครงสร้างข้อมูลและอัลกอริทึม (DSA - Python)
-│   ├── README.md                                                 <-- สรุปวิชา DSA, สรุปสูตรคำนวณโหนด, สูตร Array, แนวข้อสอบปลายภาค
-│   ├── Transcript_20260902_Hashing_Lecture.md                    <-- บทที่ 7: Separate Chaining, Open Addressing, Linear/Quadratic Probing
-│   ├── Transcript_20260902_PriorityQueue_BinaryHeap.md           <-- บทที่ 8: นิยาม Priority Queue, Heap กองดินทราย, Complete Binary Tree
-│   ├── Transcript_20260902_Exam_Focus_Node_Calculation.md        <-- 🔥 ข้อสอบข้อ 2! สูตรคำนวณโหนดความสูง 10 (1024/2047) และสูตร Array
-│   ├── Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md<-- 🔥 ข้อสอบปลายภาค! ไล่โค้ด BinaryHeap, deleteMin 3 รอบ, อาร์เรย์เปล่า
-│   └── DSA-pic\                                                  <-- โฟลเดอร์ภาพกระดานและสไลด์ 87 ภาพ (26 ส.ค., 2 ก.ย., 9 ก.ย. 2569)
+│   ├── [README.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/README.md)                                                 <-- สรุปวิชา DSA, สารบัญภาพ DSA-pic 87 ภาพ, ข้อสอบปลายภาค
+│   ├── [Transcript_20260902_Hashing_Lecture.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260902_Hashing_Lecture.md)                    <-- บทวิเคราะห์ Hashing & Collision Resolution พร้อมภาพสไลด์
+│   ├── [Transcript_20260902_PriorityQueue_BinaryHeap.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260902_PriorityQueue_BinaryHeap.md)           <-- บทวิเคราะห์ Priority Queue & Binary Heap พร้อมภาพสไลด์
+│   ├── [Transcript_20260902_Exam_Focus_Node_Calculation.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260902_Exam_Focus_Node_Calculation.md)        <-- บทวิเคราะห์จุดออกสอบข้อ 2 (คำนวณโหนดสูง 10) พร้อมภาพสไลด์
+│   ├── [Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md)<-- บทวิเคราะห์โค้ด Python และโจทย์ DeleteMin 3 รอบ พร้อมภาพสไลด์
+│   ├── 20260902_091736.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 7: Separate Chaining & Linear Probing
+│   ├── 20260902_094834.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 7: Quadratic Probing & Double Hashing
+│   ├── 20260902_104259.txt                                       <-- [ถอดความละเอียด] เสียงพักเบรก 2 วินาที
+│   ├── 20260902_104304.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 7: Rehashing & ตารางแฮชใหม่ 17 ช่อง
+│   ├── 20260902_110748.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 8: นิยามคิว และสิทธิพิเศษการแซงคิว
+│   ├── 20260902_111515.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 8: Heap กองทราย, Min-Heap, 2 คุณสมบัติ
+│   ├── 20260902_112213.txt                                       <-- [ถอดความละเอียดทุกคำพูด] Complete Binary Tree ใส่ซ้ายไปขวา ลบขวาไปซ้าย
+│   ├── 20260902_112628.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 ข้อสอบข้อ 2: คำนวณโหนดสูง 10 (1024/2047)
+│   ├── 20260902_113741.txt                                       <-- [ถอดความละเอียดทุกคำพูด] แปลง Tree เป็น Array 1D (2i, 2i+1, i//2)
+│   ├── dsa20260909_092220.txt                                    <-- [ถอดความละเอียดทุกคำพูด] ย้ำข้อสอบปลายภาคออกเป็น Array
+│   ├── dsa20260909_092303.txt                                    <-- [ถอดความละเอียดทุกคำพูด] 🔥 ไล่โค้ดคลาส BinaryHeap, insert, percolate up
+│   ├── 20260909_103704.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 ไล่โค้ด deleteMin, การบ้านเที่ยงตรง, ข้อสอบ 3 รอบ
+│   └── [DSA-pic/](file:///C:/Project/Voice/DSA-pic/)                                                  <-- คลังภาพกระดานและสไลด์ 87 ภาพ (เชื่อมโยงภาพถ่ายกับการบรรยาย)
 │
 ├── 04_Computer_Graphics_Design\                                  <-- วิชาคอมพิวเตอร์กราฟิกส์ (Adobe Illustrator)
-│   ├── README.md                                                 <-- สรุปกฎสอบ 9.00-12.00 น., ให้เน็ต 10 นาที, ข้อสอบปฏิบัติ 4 ข้อ 300 คะแนน
-│   └── Transcript_20260302_Final_Exam_Briefing.md                <-- ถอดความคำชี้แจงข้อสอบ 4 ข้อ (3D Revolve, Offset Path, รถ Tesla, Pen Tool)
+│   ├── README.md                                                 <-- สรุปกฎสอบ 9.00-12.00 น., ให้เน็ต 10 นาที, สอบปฏิบัติ 4 ข้อ
+│   ├── Transcript_20260302_Final_Exam_Briefing.md                <-- บทวิเคราะห์ข้อสอบปฏิบัติ 4 ข้อ 300 คะแนน
+│   └── 20260302_093603.txt                                       <-- [ถอดความละเอียดทุกคำพูด] ชี้แจงข้อสอบ 4 ข้อ (3D Revolve, Tesla, Pen Tool)
 │
 ├── 05_Technical_English\                                         <-- วิชาภาษาอังกฤษเชิงเทคนิคเพื่อการสื่อสาร
-│   ├── README.md                                                 <-- สรุปบทพูดนำเสนอ Custom PC และงานอดิเรกดนตรีคลายเครียด
-│   └── Transcript_20260223_Presentation_Practice_Coaching.md     <-- ถอดความการซ้อมพรีเซนต์และอาจารย์ตรวจแก้คำศัพท์/การออกเสียง
+│   ├── README.md                                                 <-- สรุปบทพูดนำเสนอ Custom PC และงานอดิเรกดนตรี
+│   ├── Transcript_20260223_Presentation_Practice_Coaching.md     <-- บทวิเคราะห์การซ้อมพรีเซนต์
+│   └── 20260223_143626.txt                                       <-- [ถอดความละเอียดทุกคำพูด] ซ้อมพรีเซนต์เดี่ยว, ออกเสียง Piece, Satisfaction
 │
 ├── 06_Personal_Financial_Trading\                                <-- การเงินส่วนบุคคล / การลงทุนเทรดดิ้ง (Forex & MT5 EA)
 │   ├── README.md                                                 <-- สรุปเงื่อนไขโบนัสเทรดครบ 5 ออเดอร์, การติดตั้ง EA บน MT5
-│   └── Transcript_20260409_Broker_MT5_EA_Support.md              <-- ถอดความการคุยกับเจ้าหน้าที่ฝ่ายบริการลูกค้า (คุณบัว)
+│   ├── Transcript_20260409_Broker_MT5_EA_Support.md              <-- บทวิเคราะห์การสนทนากับฝ่ายบริการลูกค้า
+│   └── 20260409_105602.txt                                       <-- [ถอดความละเอียดทุกคำพูด] คุยกับคุณบัว โบรกเกอร์ MT5 EA ถอนกำไร
 │
-└── Success\                                                      <-- โฟลเดอร์จัดเก็บไฟล์เสียงต้นฉบับทั้ง 23 ไฟล์ที่ผ่านการแปลเรียบร้อยแล้ว (.aac)
+└── Success\                                                      <-- แหล่งจัดเก็บไฟล์เสียงต้นฉบับทั้ง 23 ไฟล์ที่แปลเสร็จแล้ว (.aac)
 ```
 
 ---

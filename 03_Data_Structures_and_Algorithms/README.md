@@ -1,86 +1,99 @@
-# สรุปภาพรวม: วิชาโครงสร้างข้อมูลและขั้นตอนวิธี (Data Structures and Algorithms)
-**กลุ่มโฟลเดอร์:** `03_Data_Structures_and_Algorithms`  
-**วิชา:** Data Structures and Algorithms (โครงสร้างข้อมูลและอัลกอริทึม - ภาษา Python)  
-**หัวข้อการสอนหลักที่บันทึกไว้:** 
-1. **บทที่ 7: ตารางแฮชและการแก้ปัญหาการชน (Hashing & Collision Resolution)**
-   - Separate Chaining (การแยกสายโซ่ลิงก์ลิสต์)
-   - Open Addressing: Linear Probing, Quadratic Probing, Double Hashing
-   - สูตรคำนวณตำแหน่งแฮช $h_i(x) = (\text{hash}(x) + f(i)) \pmod{\text{Table\_Size}}$
-2. **บทที่ 8: คิวลำดับความสำคัญและฮีปทวิภาค (Priority Queue & Binary Heap)**
-   - นิยามของ Priority Queue (PQ) และคุณสมบัติการแทรก/แซงคิว
-   - โครงสร้าง Binary Heap รูปทรงพีระมิดกองดินกองทราย
-   - คุณสมบัติ 2 ประการ: Structure Property (Complete Binary Tree) และ Heap-Order Property ($Parent \le Child$)
-   - การแทนที่ Binary Tree ด้วยอาร์เรย์ 1 มิติ (Array Representation): Root อยู่ที่ Index 1, Left Child = $2i$, Right Child = $2i + 1$, Parent = $\lfloor i / 2 \rfloor$
-3. **การเขียนโปรแกรมภาษา Python สำหรับ Binary Heap (Implementation)**
-   - คลาส `BinaryHeap`
-   - เมธอด `__init__(self, capacity)`
-   - เมธอด `insert(self, x)` (การแทรกและทำ Percolate Up)
-   - เมธอด `deleteMin(self)` (การลบรากและทำ Percolate Down)
-4. **โฟลเดอร์ภาพประกอบ:** `DSA-pic/` (ภาพถ่ายกระดานและสไลด์ 87 ภาพ ตรงกับคาบเรียน 26 ส.ค., 2 ก.ย., 9 ก.ย. 2569)
+# สรุปภาพรวมและสารบัญหลัก: วิชาโครงสร้างข้อมูลและขั้นตอนวิธี (Data Structures and Algorithms)
+
+**หมวดหมู่วิชา:** วท.บ. วิทยาการคอมพิวเตอร์ / เทคโนโลยีสารสนเทศ  
+**ผู้บรรยาย:** อาจารย์ประจำวิชา (ดร.ประดิษฐ์ พิทักษ์เสถียรกุล)  
+**โฟลเดอร์ปฏิบัติการ:** `C:\Project\Voice\03_Data_Structures_and_Algorithms\`  
+**คลังภาพประกอบการสอน:** `C:\Project\Voice\DSA-pic\` (สไลด์, เอกสาร Word, โค้ด VS Code และภาพกระดานรวม 87 ภาพ)  
 
 ---
 
-## 📋 รายการไฟล์เสียงในกลุ่มนี้
+## 📑 สารบัญเอกสารวิเคราะห์และถอดความอย่างละเอียด (Detailed Lecture Documents)
 
-| ชื่อไฟล์ | วันที่-เวลา | ความยาว | สาระสำคัญ / กิจกรรมในชั้นเรียน |
+1. 📘 [Transcript_20260902_Hashing_Lecture.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260902_Hashing_Lecture.md)  
+   - **บทที่ 7: ตารางแฮชและการแก้ปัญหาการชน (Hashing, Collision Resolution & Rehashing)**
+   - วิเคราะห์เจาะลึก: Separate Chaining, Open Addressing, Linear Probing ($F(i)=i$), Quadratic Probing ($F(i)=i^2$), Double Hashing ($F(i)=i \cdot (R - (x \bmod R)), R=7$), Primary/Secondary Clustering, และการทำ Rehashing ขยายตาราง 7 เป็น 17 ช่อง พร้อมกฎอ่านข้อมูลจากบนลงล่าง
+2. 📘 [Transcript_20260902_PriorityQueue_BinaryHeap.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260902_PriorityQueue_BinaryHeap.md)  
+   - **บทที่ 8: คิวลำดับความสำคัญและโครงสร้างฮีป (Priority Queue & Binary Heap Properties)**
+   - วิเคราะห์เจาะลึก: เปรียบเทียบ FIFO Queue vs Priority Queue, ที่มาของรูปทรง Heap (กองดินกองทรายพีระมิด), Structure Property (Complete Binary Tree), Heap-Order Property (Min-Heap: Parent $\le$ Children)
+3. 📘 [Transcript_20260902_Exam_Focus_Node_Calculation.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260902_Exam_Focus_Node_Calculation.md)  
+   - **เจาะลึกข้อสอบข้อ 2: การคำนวณจำนวนโหนดและการแปลง Tree เป็น 1D Array**
+   - วิเคราะห์เจาะลึก: พิสูจน์สูตรช่วงโหนด $2^H \le N \le 2^{H+1}-1$, เฉลยข้อสอบตรง $H=10 \rightarrow \text{Min}=1024, \text{Max}=2047$ (ห้ามตอบติดเลขยกกำลัง), สูตรโครงสร้าง Array 1 มิติ (Root=1, Left=$2i$, Right=$2i+1$, Parent=$\lfloor i/2 \rfloor$)
+4. 📘 [Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md)  
+   - **เจาะลึกข้อสอบปลายภาค: การไล่โค้ด Python Binary Heap, การแทรก และการลบ**
+   - วิเคราะห์เจาะลึก: คลาส `BinaryHeap`, การสร้าง `[None] * (capacity + 1)`, ตาราง Trace ทีละสเต็ปของ `insert(14)` (Percolate Up), ตาราง Trace ของ `deleteMin()` (Percolate Down), เผยไต๋ข้อสอบปลายภาคออก **DeleteMin 3 ครั้งรวด** และเทคนิคทำเสร็จใน 5-10 นาที
+
+---
+
+## 📋 รายการไฟล์เสียงต้นฉบับในโฟลเดอร์นี้
+
+| ชื่อไฟล์เสียง | วันที่บันทึก | ความยาว | หัวข้อการสอนหลัก |
 | :--- | :--- | :--- | :--- |
-| `20260902_091736.aac` | 02/09/2569 09:17 น. | 29 นาที 51 วินาที | **Hashing Part 1:** ทบทวน Separate Chaining ข้อดี-ข้อเสีย, เข้าสู่ Open Addressing และ Linear Probing, สูตรคำนวณแฮช |
-| `20260902_094834.aac` | 02/09/2569 09:48 น. | 31 นาที 43 วินาที | **Hashing Part 2:** การตรวจสอบช่องว่าง, Quadratic Probing ($f(i) = i^2$), Double Hashing, ปัญหา Primary/Secondary Clustering |
-| `20260902_104259.aac` | 02/09/2569 10:42 น. | 2 วินาที | เสียงช่วงพักเบรกระหว่างคาบ |
-| `20260902_104304.aac` | 02/09/2569 10:43 น. | 23 นาที 49 วินาที | **Hashing Part 3:** สรุปภาพรวมแบบฝึกหัด Hashing, การเตรียมตัวขึ้นบทที่ 8 |
-| `20260902_110748.aac` | 02/09/2569 11:07 น. | 7 นาที 09 วินาที | **Priority Queue Part 1:** เปิดไฟล์ Google Classroom 8.1, นิยามคำว่า "คิว" (แถวคอย FIFO) และการ "แซงคิวตามสิทธิพิเศษ" (Priority) |
-| `20260902_111515.aac` | 02/09/2569 11:15 น. | 6 นาที 36 วินาที | **Priority Queue Part 2:** ตัวอย่างในชีวิตจริง (ร้านถ่ายเอกสาร, OS interrupt, printer), นิยามคำว่า Heap, การดำเนินการ Insert และ DeleteMin |
-| `20260902_112213.aac` | 02/09/2569 11:22 น. | 4 นาที 01 วินาที | **Binary Heap Part 1:** Complete Binary Tree (เต็มทุกชั้นยกเว้นชั้นล่างสุดไล่จากซ้ายไปขวา), การเพิ่มข้อมูลและลบข้อมูล |
-| `20260902_112628.aac` | 02/09/2569 11:26 น. | 10 นาที 42 วินาที | **🔥 จุดออกสอบข้อ 2!** สูตรคำนวณโหนด Min = $2^H$, Max = $2^{H+1}-1$ ที่ความสูง $H=10$ ตอบ 1024 และ 2047 โหนด (ห้ามตอบติดเลขยกกำลัง) |
-| `20260902_113741.aac` | 02/09/2569 11:37 น. | 7 นาที 02 วินาที | **Array Representation:** แปลง Tree เป็น Array 1D (Root ที่ 1, Left=2i, Right=2i+1, Parent=floor(i/2)), Heap-Order Property |
-| `dsa20260909_092220.aac` | 09/09/2569 09:22 น. | 36 วินาที | ทบทวนการแปลงรูป Binary Tree เป็น Array และ **เน้นย้ำว่าข้อสอบออกเป็น Array** |
-| `dsa20260909_092303.aac` | 09/09/2569 09:23 น. | 50 นาที 01 วินาที | **🔥 จุดออกสอบปลายภาค!** ไล่โค้ด Python คลาส BinaryHeap: `__init__`, `insert`, โค้ดเงื่อนไขเปรียบเทียบลูกซ้าย-ขวา |
-| `20260909_103704.aac` | 09/09/2569 10:37 น. | 81 นาที 39 วินาที | **🔥 ไล่โค้ด DeleteMin & การบ้าน:** การ Percolate Down, การสั่งทำ Assignment ส่งตอน 12.00 น. และเผยทรงข้อสอบปลายภาค (DeleteMin 3 รอบ) |
+| `20260902_091736.aac` | 02/09/2569 09:17 น. | 29 นาที 51 วินาที | Hashing Part 1: Separate Chaining, Open Addressing, Linear Probing |
+| `20260902_094834.aac` | 02/09/2569 09:48 น. | 31 นาที 43 วินาที | Hashing Part 2: Quadratic Probing, Double Hashing, Secondary Clustering |
+| `20260902_104259.aac` | 02/09/2569 10:42 น. | 2 วินาที | บันทึกช่วงพักเบรกสั้น |
+| `20260902_104304.aac` | 02/09/2569 10:43 น. | 23 นาที 49 วินาที | Hashing Part 3: Rehashing, Load Factor $> 70\%$, ขนาดตาราง 17 |
+| `20260902_110748.aac` | 02/09/2569 11:07 น. | 7 นาที 09 วินาที | Priority Queue Part 1: นิยามคำว่าคิวและสิทธิพิเศษแซงคิว |
+| `20260902_111515.aac` | 02/09/2569 11:15 น. | 6 นาที 36 วินาที | Priority Queue Part 2: ตัวอย่างจริง, ความหมายของ Heap กองดินกองทราย |
+| `20260902_112213.aac` | 02/09/2569 11:22 น. | 4 นาที 01 วินาที | Binary Heap: Complete Binary Tree, กฎแทรกซ้าย-ขวา, ลบขวา-ซ้าย |
+| `20260902_112628.aac` | 02/09/2569 11:26 น. | 10 นาที 42 วินาที | **ข้อสอบข้อ 2!** คำนวณโหนดที่ความสูง $H=10$ ตอบ 1024 และ 2047 |
+| `20260902_113741.aac` | 02/09/2569 11:37 น. | 7 นาที 02 วินาที | Array Representation: Root=1, Left=$2i$, Right=$2i+1$, Parent=$\lfloor i/2 \rfloor$ |
+| `dsa20260909_092220.aac`| 09/09/2569 09:22 น. | 36 วินาที | สรุปทบทวน Array Representation ก่อนเริ่มไล่โค้ด |
+| `dsa20260909_092303.aac`| 09/09/2569 09:23 น. | 50 นาที 01 วินาที | **ข้อสอบปลายภาค!** ไล่โค้ด Python `BinaryHeap.insert(14)` และลูป Percolate Up |
+| `20260909_103704.aac` | 09/09/2569 10:37 น. | 81 นาที 39 วินาที | **ข้อสอบปลายภาค!** ไล่โค้ด `deleteMin`, Percolate Down, การบ้าน และเผยสอบ DeleteMin 3 ครั้ง |
 
 ---
 
-## 🎯 จุดเน้นย้ำที่ "ออกสอบแน่นอน" (Exam Secrets & Scope)
+## 🖼️ คลังภาพและสารบัญรูปภาพบรรยาย (`DSA-pic/` Visual Catalog)
 
-### ข้อสอบที่ 1: ตารางแฮช (Hashing Table)
-- **รูปแบบข้อสอบปลายภาค:** อาจารย์จะให้ **ตารางว่างๆ (Empty Hash Table)** ขนาดหนึ่งมา (เช่น Table Size = 10 หรือ 11) แล้วให้ชุดตัวเลขหรือชื่อคนมา ให้เราเขียนค่าลงในช่องตารางตามลำดับการแฮช
-- **สูตรที่ต้องท่อง:**
-  $$h_i(x) = (\text{hash}(x) + f(i)) \pmod{\text{Table\_Size}}$$
-  - ถ้าเป็น **Linear Probing:** $f(i) = i$ (เลื่อนไปทีละ 1 ช่องถัดไปเรื่อยๆ)
-  - ถ้าเป็น **Quadratic Probing:** $f(i) = i^2$ (เลื่อนไปช่อง $+1, +4, +9, +16, \dots$)
-  - ถ้าเป็น **Double Hashing:** $f(i) = i \times \text{hash}_2(x)$
+โฟลเดอร์ [DSA-pic/](file:///C:/Project/Voice/DSA-pic/) รวบรวมภาพถ่ายหน้าจอโปรเจกเตอร์ สไลด์บรรยาย และกระดานดำรวม 87 ภาพ เชื่อมโยงกับเนื้อหาการเรียนดังนี้:
 
----
-
-### ข้อสอบที่ 2: การคำนวณจำนวนโหนดจากความสูงของ Complete Binary Tree (ข้อใหญ่ข้อที่ 2!)
-อาจารย์พูดในคลิปเสียง `20260902_112628.aac` ชัดเจนว่า:
-> *"โจทก์มาเลยครับ เวลาสอบนะครับ ทรงนี้นะครับ: **How many minimum number of nodes of complete binary tree at the height 10?** ... ข้อสอบออกทรงนี้เลย... ใครจะมาถามคุณนิดๆ หน่อยๆ เขาถามคุณเยอะๆ เลย! ... และข้อสอบนี้ออกสอบถึงระดับปริญญาโทเลยนะ!"*
-
-- **สูตรจำนวนโหนดอย่างน้อย (Minimum nodes at height $H$):**
-  $$\text{Min Nodes} = 2^H$$
-  - ที่ความสูง $H = 10$: $\text{Min Nodes} = 2^{10} = \mathbf{1,024 \text{ โหนด}}$
-- **สูตรจำนวนโหนดอย่างมาก (Maximum nodes at height $H$):**
-  $$\text{Max Nodes} = 2^{H+1} - 1$$
-  - ที่ความสูง $H = 10$: $\text{Max Nodes} = 2^{11} - 1 = 2048 - 1 = \mathbf{2,047 \text{ โหนด}}$
-- **⚠️ กฎเหล็กในการตอบข้อสอบ:**
-  > *"เวลาตอบอย่าติดในรูปเลขยกกำลัง คุณจะต้องตอบเป็นตัวเลขจำนวนเต็มของโหนด! ถ้าตอบมาเป็นเลขยกกำลังอย่างนี้ ไม่ได้คะแนน!"* (ต้องคำนวณออกมาเป็นตัวเลข 1,024 และ 2,047 เท่านั้น)
+### กลุ่มที่ 1: คาบเรียนวันที่ 26 สิงหาคม 2569 (26 ภาพ)
+- **LinkedList Implementation & Memory Layout (09:17 - 10:25 น.):**
+  - [IMG_20260826_091737_550](file:///C:/Project/Voice/DSA-pic/IMG_20260826_091737_550@2133355796.jpg) ถึง [IMG_20260826_102512_637](file:///C:/Project/Voice/DSA-pic/IMG_20260826_102512_637@1078549838.jpg): ตัวอย่างคลาสโหนด, `listA.insert()`, การวาดพอยน์เตอร์บนกระดาน
+- **บทนำ Hashing & Separate Chaining (10:54 - 11:09 น.):**
+  - [IMG_20260826_105404_780](file:///C:/Project/Voice/DSA-pic/IMG_20260826_105404_780@868538722.jpg): สไลด์แนะนำ Chapter 7 Hashing
+  - [IMG_20260826_110850_112](file:///C:/Project/Voice/DSA-pic/IMG_20260826_110850_112@2055522502.jpg), [IMG_20260826_110853_418](file:///C:/Project/Voice/DSA-pic/IMG_20260826_110853_418@-698788718.jpg), [IMG_20260826_110910_371](file:///C:/Project/Voice/DSA-pic/IMG_20260826_110910_371@-1304483386.jpg): แผนภาพ Separate Chaining
+- **Open Addressing & Linear Probing (11:27 - 12:01 น.):**
+  - [IMG_20260826_112751_651](file:///C:/Project/Voice/DSA-pic/IMG_20260826_112751_651@-1735638268.jpg): นิยาม Open Addressing
+  - [IMG_20260826_113233_236](file:///C:/Project/Voice/DSA-pic/IMG_20260826_113233_236@553663909.jpg): สูตรหลัก $h_i(x) = (\text{hash}(x) + F(i)) \pmod{\text{Table\_Size}}$
+  - [IMG_20260826_113527_438](file:///C:/Project/Voice/DSA-pic/IMG_20260826_113527_438@-1503705519.jpg): นิยาม Linear Probing $F(i) = i$
+  - [IMG_20260826_114905_347](file:///C:/Project/Voice/DSA-pic/IMG_20260826_114905_347@-1119323055.jpg) ถึง [IMG_20260826_115844_081](file:///C:/Project/Voice/DSA-pic/IMG_20260826_115844_081@-725424099.jpg): ตารางใส่ข้อมูล 89, 18, 49, 58 พร้อม Wrap Around
+  - [IMG_20260826_120134_783](file:///C:/Project/Voice/DSA-pic/IMG_20260826_120134_783@145435942.jpg): สไลด์สรุปการใส่ 58 และคำเตือนห้ามตอบ 6
 
 ---
 
-### ข้อสอบที่ 3: การแทนที่ Binary Heap ด้วย Array และการไล่โค้ด (Trace Code)
-อาจารย์เน้นย้ำในคลิปเสียง `dsa20260909_092220.aac` และ `dsa20260909_103704.aac` ว่า:
-> *"ข้อสอบออกเป็น Array ทั้งนั้น!... ทรงเดียวกับข้อสอบปลายภาคเลย คุณจะเจอ Array ทรงนี้เลย Array เปล่า แล้วให้คุณเขียน!"*
-
-- **สูตรสมการโครงสร้าง Array (Index เริ่มต้นที่ 1):**
-  - $\text{Root}$ อยู่ที่ตำแหน่ง $\text{Index } 1$ (Index 0 เว้นว่างไว้เสมอ)
-  - $\text{Left Child ของ Node } i = \mathbf{2i}$
-  - $\text{Right Child ของ Node } i = \mathbf{2i + 1}$
-  - $\text{Parent ของ Node } i = \mathbf{\lfloor i / 2 \rfloor}$ (ใน Python คือ `i // 2` **ตัดเศษทิ้งเสมอ ห้ามปัดเศษขึ้น!**)
-    - *ตัวอย่างที่อาจารย์ย้ำ:* Node 7 จะมี Parent คือ $\lfloor 7 / 2 \rfloor = 3$ (ไม่ใช่ 4)
-- **โจทย์ปลายภาคเรื่อง DeleteMin:**
-  - ในการบ้านในห้อง อาจารย์ให้ทำ DeleteMin เพียง 1 ครั้ง
-  - **แต่ในข้อสอบปลายภาค อาจารย์แง้มว่าจะให้ทำ DeleteMin ถึง 3 ครั้งติดต่อกัน!** แล้วให้เขียนสถานะของ Array สุดท้ายลงในช่องว่าง
+### กลุ่มที่ 2: คาบเรียนวันที่ 2 กันยายน 2569 (33 ภาพ)
+- **สรุปผลการชน Linear Probing & ปัญหา Primary Clustering (09:26 - 09:31 น.):**
+  - [IMG_20260902_092629_264](file:///C:/Project/Voice/DSA-pic/IMG_20260902_092629_264@644218902.jpg): สไลด์สรุปใส่ครบ 5 ตัว เกิดการชน 7 ครั้ง (69: 3 ครั้ง, 58: 3 ครั้ง, 49: 1 ครั้ง)
+  - [IMG_20260902_092757_185](file:///C:/Project/Voice/DSA-pic/IMG_20260902_092757_185@1043314096.jpg), [IMG_20260902_093139_293](file:///C:/Project/Voice/DSA-pic/IMG_20260902_093139_293@1056574251.jpg): แผนภาพแสดงกลุ่มก้อน Primary Clustering
+- **Quadratic Probing & Secondary Clustering (09:37 - 09:49 น.):**
+  - [IMG_20260902_093717_092](file:///C:/Project/Voice/DSA-pic/IMG_20260902_093717_092@1096805742.jpg) ถึง [IMG_20260902_094605_421](file:///C:/Project/Voice/DSA-pic/IMG_20260902_094605_421@1593014805.jpg): สูตร $F(i) = i^2$ และการไล่คำนวณใส่ 89, 18, 49, 58, 69
+  - [IMG_20260902_094852_732](file:///C:/Project/Voice/DSA-pic/IMG_20260902_094852_732@836004370.jpg), [IMG_20260902_094919_250](file:///C:/Project/Voice/DSA-pic/IMG_20260902_094919_250@-29312171.jpg): แผนผังวงแหวนคลื่นกระเพื่อม Secondary Clustering
+- **Double Hashing (09:54 - 10:20 น.):**
+  - [IMG_20260902_095414_770](file:///C:/Project/Voice/DSA-pic/IMG_20260902_095414_770@1141739885.jpg) ถึง [IMG_20260902_101006_187](file:///C:/Project/Voice/DSA-pic/IMG_20260902_101006_187@1239959174.jpg): สูตร $\text{hash}_2(x) = R - (x \bmod R)$, วิธีหา $R=7$
+  - [IMG_20260902_101723_409](file:///C:/Project/Voice/DSA-pic/IMG_20260902_101723_409@420928213.jpg), [IMG_20260902_102011_819](file:///C:/Project/Voice/DSA-pic/IMG_20260902_102011_819@-956099729.jpg): การคำนวณ $F(1)$ ของ 49 ได้ 7, 58 ได้ 5, 69 ได้ 1
+- **Rehashing & ขยายตาราง (10:50 - 11:04 น.):**
+  - [IMG_20260902_105026_745](file:///C:/Project/Voice/DSA-pic/IMG_20260902_105026_745@-2018013112.jpg) ถึง [IMG_20260902_110434_333](file:///C:/Project/Voice/DSA-pic/IMG_20260902_110434_333@-1716796054.jpg): สไลด์คำนวณเปอร์เซ็นต์ตาราง 7 ช่องใส่ 4 ตัว (57.14%) ใส่เพิ่มตัวที่ 5 เป็น 71.42% ขยายเป็นขนาด 17 และลำดับการอ่านจากบนลงล่าง (6, 15, 24, 13)
+- **Priority Queue, Heap & Node Calculation (11:22 - 11:37 น.):**
+  - [IMG_20260902_112203_525](file:///C:/Project/Voice/DSA-pic/IMG_20260902_112203_525@1985525037.jpg): สไลด์เปิดบทที่ 8
+  - [IMG_20260902_112442_392](file:///C:/Project/Voice/DSA-pic/IMG_20260902_112442_392@2130616190.jpg), [IMG_20260902_112525_396](file:///C:/Project/Voice/DSA-pic/IMG_20260902_112525_396@-397010168.jpg): **ข้อสอบความสูง $H=10$ ตอบ 1024 และ 2047**
+  - [IMG_20260902_113121_541](file:///C:/Project/Voice/DSA-pic/IMG_20260902_113121_541@-1402929343.jpg), [IMG_20260902_113308_947](file:///C:/Project/Voice/DSA-pic/IMG_20260902_113308_947@-815528554.jpg): Min-Heap และ Complete Binary Tree
+  - [IMG_20260902_113705_690](file:///C:/Project/Voice/DSA-pic/IMG_20260902_113705_690@-811833240.jpg): สูตรการแปลง Tree เป็น Array (Root=1, Left=$2i$, Right=$2i+1$, Parent=$\lfloor i/2 \rfloor$)
 
 ---
 
-## ⏰ กำหนดส่งงานและการบ้าน (Assignments)
-- **การบ้านในคาบ 9 ก.ย. 2569:** เขียนผลลัพธ์การทำ `deleteMin` 1 ครั้งลงใน Array แล้วส่งใน Google Classroom **กำหนดส่ง: เวลา 12.00 น. (เที่ยงตรง) ของวันนั้น**
+### กลุ่มที่ 3: คาบเรียนวันที่ 7 กันยายน 2569 (1 ภาพ)
+- [IMG_20260907_153633_628](file:///C:/Project/Voice/DSA-pic/IMG_20260907_153633_628.jpg): ภาพกระดานดำสรุปสูตรดัชนี Array และเงื่อนไขการตัดเศษทิ้ง
+
+---
+
+### กลุ่มที่ 4: คาบเรียนวันที่ 9 กันยายน 2569 (26 ภาพ)
+- **การทบทวนและไล่โค้ด `BinaryHeap.insert(14)` (09:22 - 10:04 น.):**
+  - [IMG_20260909_092253_743](file:///C:/Project/Voice/DSA-pic/IMG_20260909_092253_743.jpg) ถึง [IMG_20260909_093653_400](file:///C:/Project/Voice/DSA-pic/IMG_20260909_093653_400.jpg): โครงสร้างคลาส `BinaryHeap`, Constructor `__init__`, `[None] * (capacity + 1)`
+  - [IMG_20260909_094140_669](file:///C:/Project/Voice/DSA-pic/IMG_20260909_094140_669.jpg), [IMG_20260909_094609_602](file:///C:/Project/Voice/DSA-pic/IMG_20260909_094609_602.jpg): **สไลด์โจทย์ข้อสอบ:** แทรก 14 ลงใน Heap 10 สมาชิก
+  - [IMG_20260909_094650_241](file:///C:/Project/Voice/DSA-pic/IMG_20260909_094650_241.jpg) ถึง [IMG_20260909_100405_540](file:///C:/Project/Voice/DSA-pic/IMG_20260909_100405_540.jpg): ตาราง Trace `hole` แต่ละรอบ (11 $\rightarrow$ 5 $\rightarrow$ 2) และเงื่อนไข While loop
+- **การไล่โค้ด `deleteMin()` และ Percolate Down (10:39 - 11:34 น.):**
+  - [IMG_20260909_103928_646](file:///C:/Project/Voice/DSA-pic/IMG_20260909_103928_646.jpg) ถึง [IMG_20260909_110520_920](file:///C:/Project/Voice/DSA-pic/IMG_20260909_110520_920.jpg): นิยามการลบ Root และการลอยตัวลง
+  - [IMG_20260909_110606_048](file:///C:/Project/Voice/DSA-pic/IMG_20260909_110606_048.jpg) ถึง [IMG_20260909_113431_184](file:///C:/Project/Voice/DSA-pic/IMG_20260909_113431_184.jpg): สไลด์ขั้นตอน `deleteMin` อย่างละเอียด: ดึง 13 ออก, ตัวท้ายสุด 31 ลอยมา, เลือกลูกตัวน้อยกว่าสลับที่จนได้ตำแหน่งหลุมที่ 5
+- **การสั่งการบ้านและการเฉลยแนวข้อสอบปลายภาค (11:56 - 11:57 น.):**
+  - [IMG_20260909_115634_445](file:///C:/Project/Voice/DSA-pic/IMG_20260909_115634_445.jpg), [IMG_20260909_115719_307](file:///C:/Project/Voice/DSA-pic/IMG_20260909_115719_307.jpg): **แบบฟอร์มการบ้านส่งก่อน 12:00 น. และเผยข้อสอบปลายภาค DeleteMin 3 ครั้งติดต่อกัน!**
