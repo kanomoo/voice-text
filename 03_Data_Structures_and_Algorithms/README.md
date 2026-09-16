@@ -21,6 +21,9 @@
 4. 📘 [Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md)  
    - **เจาะลึกข้อสอบปลายภาค: การไล่โค้ด Python Binary Heap, การแทรก และการลบ**
    - วิเคราะห์เจาะลึก: คลาส `BinaryHeap`, การสร้าง `[None] * (capacity + 1)`, ตาราง Trace ทีละสเต็ปของ `insert(14)` (Percolate Up), ตาราง Trace ของ `deleteMin()` (Percolate Down), เผยไต๋ข้อสอบปลายภาคออก **DeleteMin 3 ครั้งรวด** และเทคนิคทำเสร็จใน 5-10 นาที
+5. 📘 [Transcript_20260916_Comparison_Sorting_Insertion_Selection_Bubble_Exam_Trace.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260916_Comparison_Sorting_Insertion_Selection_Bubble_Exam_Trace.md)  
+   - **บทที่ 9: การเรียงลำดับข้อมูลแบบเปรียบเทียบ (Comparison-based Sorting: Insertion, Selection, Bubble Sort) และเฉลยข้อสอบใบงาน**
+   - วิเคราะห์เจาะลึก: กลไก `temp` และการเปรียบเทียบถอยหลังของ Insertion Sort, การนับ Position Move และสูตร Best/Worst Case ($\frac{N(N-1)}{2}$), การแบ่ง Sorted/Unsorted Part ของ Selection Sort, โครงสร้างหน่วยความจำ `range(0)` vs `[]`, การลอยตัวของ Bubble Sort, สูตรลัด Inversion Counting หา Total Swaps, และเฉลยใบงาน Bubble Sort อาร์เรย์ `[64, 34, 25, 12, 22, 11, 90]` (6 passes, 14 swaps, Pass 1 trace)
 
 ---
 
@@ -40,6 +43,8 @@
 | `dsa20260909_092220.aac`| 09/09/2569 09:22 น. | 36 วินาที | สรุปทบทวน Array Representation ก่อนเริ่มไล่โค้ด |
 | `dsa20260909_092303.aac`| 09/09/2569 09:23 น. | 50 นาที 01 วินาที | **ข้อสอบปลายภาค!** ไล่โค้ด Python `BinaryHeap.insert(14)` และลูป Percolate Up |
 | `20260909_103704.aac` | 09/09/2569 10:37 น. | 81 นาที 39 วินาที | **ข้อสอบปลายภาค!** ไล่โค้ด `deleteMin`, Percolate Down, การบ้าน และเผยสอบ DeleteMin 3 ครั้ง |
+| `20260916_092007.aac` | 16/09/2569 09:20 น. | 44 นาที 43 วินาที | **Sorting Part 1:** สัญนิยมการเรียง, เจาะลึก Insertion Sort และตาราง Position Move, 3 Cases |
+| `20260916_102037.aac` | 16/09/2569 10:20 น. | 68 นาที 45 วินาที | **Sorting Part 2:** Selection Sort, range(0) ใน Python, Bubble Sort, สูตรลัด Inversion, ใบงานแบบฝึกหัดท้ายคาบ |
 
 ---
 
@@ -97,3 +102,14 @@
   - [IMG_20260909_110606_048](file:///C:/Project/Voice/DSA-pic/IMG_20260909_110606_048.jpg) ถึง [IMG_20260909_113431_184](file:///C:/Project/Voice/DSA-pic/IMG_20260909_113431_184.jpg): สไลด์ขั้นตอน `deleteMin` อย่างละเอียด: ดึง 13 ออก, ตัวท้ายสุด 31 ลอยมา, เลือกลูกตัวน้อยกว่าสลับที่จนได้ตำแหน่งหลุมที่ 5
 - **การสั่งการบ้านและการเฉลยแนวข้อสอบปลายภาค (11:56 - 11:57 น.):**
   - [IMG_20260909_115634_445](file:///C:/Project/Voice/DSA-pic/IMG_20260909_115634_445.jpg), [IMG_20260909_115719_307](file:///C:/Project/Voice/DSA-pic/IMG_20260909_115719_307.jpg): **แบบฟอร์มการบ้านส่งก่อน 12:00 น. และเผยข้อสอบปลายภาค DeleteMin 3 ครั้งติดต่อกัน!**
+
+---
+
+### กลุ่มที่ 5: คาบเรียนวันที่ 16 กันยายน 2569 (5 ภาพ)
+- **สัญนิยมการเรียงลำดับ & การวิเคราะห์ Insertion Sort (09:21 - 09:58 น.):**
+  - [IMG_20260916_092114_638@166919381.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260916_092114_638@166919381.jpg): สไลด์เปิดบทที่ 9 Comparison-based sorting สัญนิยมเรียงจากน้อยไปหามาก
+  - [IMG_20260916_094820_819@893369530.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260916_094820_819@893369530.jpg): สไลด์ตารางการทำงาน Insertion Sort Trace ข้อมูล 34, 8, 64, 51, 32, 21 รอบ p=1 ถึง 5 และ Position Move
+  - [IMG_20260916_095318_496@1010269358.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260916_095318_496@1010269358.jpg): บันทึกกระดาน Best Case 8, 21, 32, 34, 51, 64 (0 moves), Worst Case, Average Case
+  - [IMG_20260916_095816_275@-1897800400.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260916_095816_275@-1897800400.jpg): บันทึกกระดานโจทย์ Worst Case 64, 51, 34, 32, 21, 8 คำนวณ Position Move รวม 15 ครั้ง
+- **ใบงานแบบฝึกหัดในห้องเรียน (In-Class Assignment / Quiz) (11:27 น.):**
+  - [IMG_20260916_112712_580@-1614993214.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260916_112712_580@-1614993214.jpg): ใบงานจริงวิชา DSA เรื่องการไล่ Bubble Sort บนอาร์เรย์ `[64, 34, 25, 12, 22, 11, 90]` (Passes=6, Total Swaps=14, Step 4 trace, Pass 1 result, Swaps after pass 1 = 5) ส่งก่อนเที่ยงตรง

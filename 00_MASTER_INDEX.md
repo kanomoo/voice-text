@@ -1,7 +1,7 @@
 # สารบัญและรายงานวิเคราะห์ไฟล์เสียงฉบับสมบูรณ์ (Master Voice Index & Intelligence Report)
 **ตำแหน่งไดเรกทอรี:** `C:\Project\Voice\`  
-**วันที่ประมวลผลล่าสุด:** 15 กันยายน 2569  
-**จำนวนไฟล์เสียงทั้งหมด:** 25 ไฟล์เสียง (.aac) + 1 โฟลเดอร์ภาพประกอบ (`DSA-pic/` รวม 87 ภาพ)  
+**วันที่ประมวลผลล่าสุด:** 16 กันยายน 2569  
+**จำนวนไฟล์เสียงทั้งหมด:** 27 ไฟล์เสียง (.aac) + 1 โฟลเดอร์ภาพประกอบ (`DSA-pic/` รวม 92 ภาพ)  
 
 ---
 
@@ -37,11 +37,12 @@ C:\Project\Voice\
 │   └── 20260915_130022.txt                                       <-- [ถอดความละเอียดทุกคำพูด] NoSQL, 4 Data Models, CAP Theorem, นัดแล็บ
 │
 ├── 03_Data_Structures_and_Algorithms\                            <-- วิชาโครงสร้างข้อมูลและอัลกอริทึม (DSA - Python)
-│   ├── README.md                                                 <-- สรุปวิชา DSA, สารบัญภาพ DSA-pic 87 ภาพ, ข้อสอบปลายภาค
+│   ├── README.md                                                 <-- สรุปวิชา DSA, สารบัญภาพ DSA-pic 92 ภาพ, ข้อสอบปลายภาค
 │   ├── Transcript_20260902_Hashing_Lecture.md                    <-- บทวิเคราะห์ Hashing & Collision Resolution พร้อมภาพสไลด์
 │   ├── Transcript_20260902_PriorityQueue_BinaryHeap.md           <-- บทวิเคราะห์ Priority Queue & Binary Heap พร้อมภาพสไลด์
 │   ├── Transcript_20260902_Exam_Focus_Node_Calculation.md        <-- บทวิเคราะห์จุดออกสอบข้อ 2 (คำนวณโหนดสูง 10) พร้อมภาพสไลด์
 │   ├── Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md<-- บทวิเคราะห์โค้ด Python และโจทย์ DeleteMin 3 รอบ พร้อมภาพสไลด์
+│   ├── Transcript_20260916_Comparison_Sorting_Insertion_Selection_Bubble_Exam_Trace.md <-- 🔥 บทวิเคราะห์เจาะลึก Sorting 3 แบบ, Position Move, Inversions, และเฉลยข้อสอบใบงาน
 │   ├── 20260902_091736.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 7: Separate Chaining & Linear Probing
 │   ├── 20260902_094834.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 7: Quadratic Probing & Double Hashing
 │   ├── 20260902_104259.txt                                       <-- [ถอดความละเอียด] เสียงพักเบรก 2 วินาที
@@ -54,7 +55,9 @@ C:\Project\Voice\
 │   ├── dsa20260909_092220.txt                                    <-- [ถอดความละเอียดทุกคำพูด] ย้ำข้อสอบปลายภาคออกเป็น Array
 │   ├── dsa20260909_092303.txt                                    <-- [ถอดความละเอียดทุกคำพูด] 🔥 ไล่โค้ดคลาส BinaryHeap, insert, percolate up
 │   ├── 20260909_103704.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 ไล่โค้ด deleteMin, การบ้านเที่ยงตรง, ข้อสอบ 3 รอบ
-│   └── DSA-pic/                                                  <-- คลังภาพกระดานและสไลด์ 87 ภาพ (เชื่อมโยงภาพถ่ายกับการบรรยาย)
+│   ├── 20260916_092007.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 บทที่ 9: Sorting สัญนิยมเรียง, Insertion Sort และ Position Move
+│   ├── 20260916_102037.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 Selection Sort, range(0), Bubble Sort, Inversion, ใบงานควิซท้ายคาบ
+│   └── DSA-pic/                                                  <-- คลังภาพกระดานและสไลด์ 92 ภาพ (เชื่อมโยงภาพถ่ายกับการบรรยาย)
 │
 ├── 04_Computer_Graphics_Design\                                  <-- วิชาคอมพิวเตอร์กราฟิกส์ (Adobe Illustrator)
 │   ├── README.md                                                 <-- สรุปกฎสอบ 9.00-12.00 น., ให้เน็ต 10 นาที, สอบปฏิบัติ 4 ข้อ
@@ -113,6 +116,8 @@ C:\Project\Voice\
 | 23 | `In20260911_114230.aac` | 11/09/2569 | 2m 23s | `01_Innovative_Technopreneurs` | การบริหารความเสี่ยงเคสร้านกาแฟ, ย้ำส่ง PDF วันที่ 1, คะแนนเต็ม 28 |
 | 24 | `SE20260915_092638.aac`| 15/09/2569 | 60m 27s | `07_Software_Engineering` | บรรยาย Use Case Diagram, 4 Elements (Actor, Use Case, Boundary, Relations), Include vs Extend, ระบบห้องสมุด |
 | 25 | `20260915_130022.aac` | 15/09/2569 | 67m 51s | `02_Database_System` | บรรยาย NoSQL vs RDBMS, Big Data (5 Vs), โมเดล 4 ชนิด (Key-Value, Column, Graph, Document), CAP Theorem, นัดแล็บ 2 สัปดาห์ |
+| 26 | `20260916_092007.aac` | 16/09/2569 | 44m 43s | `03_Data_Structures_and_Algorithms` | **🔥 บทที่ 9 Sorting Part 1:** สัญนิยมการเรียง, เจาะลึก Insertion Sort และตาราง Position Move, Best/Worst Case |
+| 27 | `20260916_102037.aac` | 16/09/2569 | 68m 45s | `03_Data_Structures_and_Algorithms` | **🔥 Sorting Part 2:** Selection Sort, range(0), Bubble Sort, สูตรลัด Inversion, ใบงานควิซท้ายคาบ [64, 34, 25, 12, 22, 11, 90] |
 
 ---
 
@@ -124,13 +129,14 @@ C:\Project\Voice\
 | **15/09/2569** | **10.00 น.** | Software Engineering | **ประชาสัมพันธ์โครงการ IAESTE:** โครงการฝึกงานต่างประเทศ ณ ห้อง Spark ชั้น 1 |
 | **สัปดาห์นี้** | ตามกำหนดใน Classroom | Software Engineering | **ส่งการบ้าน Use Case Diagram:** อาจารย์จะโพสต์โจทย์ Assignment เข้าสู่ Google Classroom ให้เขียนไดอะแกรมส่ง |
 | **สัปดาห์นี้** | ในระบบ Classroom | Database System | **ส่งงานกลุ่ม ER Diagram:** ตัวแทนกลุ่มอัปโหลดภาพ/เอกสาร ER Diagram เข้าสู่ Google Classroom |
+| **16/09/2569** | **12.00 น. (เที่ยง)** | Data Structures & Algorithms | **ส่ง In-Class Assignment / Quiz:** แบบฝึกหัด Bubble Sort อาร์เรย์ `[64, 34, 25, 12, 22, 11, 90]` (Passes=6, Total Swaps=14, Step 4 trace, Pass 1 result, Swaps after pass 1 = 5) ส่งผ่าน Google Classroom |
 | **22/09/2569 เป็นต้นไป** | 2 สัปดาห์ติดต่อกัน | Database System | **เรียนภาคปฏิบัติการ Lab 2 สัปดาห์:** งดเรียนห้องบรรยาย ให้ไปเรียนที่ห้องแล็บคอมพิวเตอร์ตามรอบที่ลงชื่อใน Google Sheets เพื่อลงมือสร้าง Database จริง |
 | **01/10/2569** | **ก่อน 12.00 น. (เที่ยง)** | Innovative Technopreneurs | **ส่งไฟล์ดิจิทัลทาง LINE กลุ่มวิชา:**<br>1. ไฟล์เล่มรายงานฉบับสมบูรณ์ (PDF)<br>2. ไฟล์สไลด์นำเสนอ Presentation (PDF) |
 | **02/10/2569** | ในคาบเรียน | Innovative Technopreneurs | **1. ส่งรูปเล่มรายงานฉบับพิมพ์ Hard Copy:** ทุกกลุ่มทั้ง 18 กลุ่มต้องส่งเล่มในวันนี้ (ปริ้นท์ขาวดำได้)<br>**2. การนำเสนอผลงานรอบที่ 1:** สำหรับกลุ่มที่ 1 - 9 (บรรยาย 10 นาที ตอบคำถาม 5 นาที) |
 | **09/10/2569** | ในคาบเรียน | Innovative Technopreneurs | **การนำเสนอผลงานรอบที่ 2:** สำหรับกลุ่มที่ 10 - 18 (บรรยาย 10 นาที ตอบคำถาม 5 นาที) |
 | **วันสอบปลายภาค** | 09.00 - 12.00 น. | Computer Graphics & Design | **สอบปฏิบัติปลายภาค 3 ชั่วโมงเต็ม (Open Book):** ห้ามเข้าสายเกิน 09.10 น., ให้เน็ต 10 นาทีแรกยืนยันตัวตน, มี 4 ข้อ ข้อละ 75 คะแนน รวม 300 คะแนน |
 | **วันสอบปลายภาค** | 3 ชั่วโมงเต็ม | Database System | **สอบปลายภาคข้อเขียน 40 คะแนนเต็ม!** ห้ามออกจากห้องสอบก่อน 1 ชั่วโมงแรก ครอบคลุม Transaction, ACID, Locking, Crash Recovery, RDBMS vs NoSQL, และ CAP Theorem |
-| **วันสอบปลายภาค** | ตามตารางสอบ | Data Structures & Algorithms | **สอบข้อเขียน/ปฏิบัติปลายภาค:** มี 6-7 ข้อใหญ่ (มีโจทย์คำนวณโหนดความสูง 10, โจทย์ตารางแฮชเปล่า, และโจทย์ Array เปล่าให้ทำ DeleteMin 3 ครั้ง) |
+| **วันสอบปลายภาค** | ตามตารางสอบ | Data Structures & Algorithms | **สอบข้อเขียน/ปฏิบัติปลายภาค:** มี 6-7 ข้อใหญ่ (มีโจทย์คำนวณโหนดความสูง 10, โจทย์ตารางแฮชเปล่า, โจทย์ DeleteMin 3 ครั้ง, และโจทย์ไล่ตาราง Insertion/Selection/Bubble Sort ห้ามตอบแค่อาร์เรย์ผลลัพธ์สุดท้าย) |
 
 ---
 
@@ -150,6 +156,11 @@ C:\Project\Voice\
    - ในข้อสอบจะให้ทำ **DeleteMin ติดต่อกัน 3 รอบ** แล้วเขียนสถานะของ Array สุดท้ายลงในตารางช่องสี่เหลี่ยมที่อาจารย์เตรียมไว้ให้
 4. **ข้อสอบตารางแฮช (Hashing):**
    - ให้ตารางแฮชเปล่ามา พร้อมฟังก์ชัน $h_i(x) = (\text{hash}(x) + f(i)) \pmod{\text{Table\_Size}}$ ให้นำค่ามาแฮชและแก้ปัญหาการชนลงตาราง
+5. **🔥 ข้อสอบบทที่ 9 Sorting Algorithms (การเรียงลำดับ):**
+   - **กฎเหล็กข้อสอบ:** อาจารย์เน้นย้ำว่า **ห้ามตอบแค่อะเรย์ผลลัพธ์สุดท้ายเด็ดขาด** เพราะเด็กประถมก็เรียงได้ ข้อสอบจะไม่ให้คะแนน!
+   - **Insertion Sort:** โจทย์จะถามเจาะจงเฉพาะรอบ เช่น "After $p = 3$", ค่าตัวแปร `temp`, การเปรียบเทียบย้อนไปทางซ้าย, จำนวน **Position Move** แต่ละรอบ และผลรวม Position Move ทั้งหมด (Worst Case ใช้สูตรอนุกรม $\frac{N(N-1)}{2}$ เช่น 6 ตัวตอบ 15, 8 ตัวตอบ 28, 10 ตัวตอบ 45)
+   - **Selection Sort & range():** กับดักข้อสอบเรื่อง `range(0)` ไม่ใช่ `None` และไม่ใช่ `[0]` แต่เป็น Empty Sequence ที่ไม่จองหน่วยความจำเก็บตัวเลข ต่างกับ `[]`
+   - **Bubble Sort & Inversion Shortcut:** การคำนวณ Total Swaps ทั้งหมดตั้งแต่เริ่มจนจบ จะเท่ากับ **จำนวน Inversion ทั้งหมดในอาร์เรย์เริ่มต้น** (นับจำนวนตัวเลขทางขวามือที่น้อยกว่าตัวมันเอง แล้วนำมารวมกัน เช่น อาร์เรย์ในใบงานตอบ 14 ครั้งทันทีโดยไม่ต้องไล่ลูป)
 
 ### 2. วิชา Database System
 1. **คุณสมบัติ ACID Properties:** ต้องจำและอธิบายได้ครบทั้ง 4 ตัว (Atomicity, Consistency, Isolation, Durability)
