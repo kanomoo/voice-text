@@ -1,13 +1,13 @@
 # สารบัญและรายงานวิเคราะห์ไฟล์เสียงฉบับสมบูรณ์ (Master Voice Index & Intelligence Report)
 **ตำแหน่งไดเรกทอรี:** `C:\Project\Voice\`  
-**วันที่ประมวลผล:** 14 กันยายน 2569  
-**จำนวนไฟล์เสียงทั้งหมด:** 23 ไฟล์เสียง (.aac) + 1 โฟลเดอร์ภาพประกอบ (`DSA-pic/` รวม 87 ภาพ)  
+**วันที่ประมวลผลล่าสุด:** 15 กันยายน 2569  
+**จำนวนไฟล์เสียงทั้งหมด:** 25 ไฟล์เสียง (.aac) + 1 โฟลเดอร์ภาพประกอบ (`DSA-pic/` รวม 87 ภาพ)  
 
 ---
 
 ## 🧭 การจัดหมวดหมู่วิชาและโครงสร้างโฟลเดอร์ (Directory Structure)
 
-ตามคำสั่งของผู้ใช้งาน ได้ทำการแยกไฟล์เสียงออกเป็น **6 กลุ่มวิชาและโปรเจกต์** โดยสร้างโฟลเดอร์ไว้ภายใน `C:\Project\Voice\` ดังนี้:
+ตามคำสั่งของผู้ใช้งาน ได้ทำการแยกไฟล์เสียงออกเป็น **7 กลุ่มวิชาและโปรเจกต์** โดยสร้างโฟลเดอร์ไว้ภายใน `C:\Project\Voice\` ดังนี้:
 
 ```
 C:\Project\Voice\
@@ -24,22 +24,24 @@ C:\Project\Voice\
 │   ├── 20260904_105814.txt                                       <-- [ถอดความละเอียดทุกคำพูด] สั่งรายงานเล่มจบ 10 หัวข้อ, กฎ BMC 1 หน้า
 │   └── In20260911_114230.txt                                     <-- [ถอดความละเอียดทุกคำพูด] การบริหารความเสี่ยงร้านกาแฟ, คะแนนเต็ม 28
 │
-├── 02_Database_System\                                           <-- วิชาระบบฐานข้อมูล (Transaction, Lock Matrix, Recovery & Pop Quiz)
-│   ├── README.md                                                 <-- สรุปวิชา, ACID, Lock Matrix S/X, การกู้คืนระบบ, เฉลยควิซ
+├── 02_Database_System\                                           <-- วิชาระบบฐานข้อมูล (Transaction, Lock Matrix, NoSQL & CAP Theorem)
+│   ├── README.md                                                 <-- สรุปวิชา, ACID, Lock Matrix S/X, NoSQL, CAP Theorem, แล็บ 2 สัปดาห์
 │   ├── Transcript_20260908_130406_Transaction_Basics.md          <-- บทวิเคราะห์ Part 1: แฟ้ม Master/Transaction
 │   ├── Transcript_20260908_131052_Concurrency_ACID_Recovery.md  <-- บทวิเคราะห์ Part 2: ACID, Concurrency, Recovery
 │   ├── Transcript_20260908_143913_InClass_Quiz_ACID_Lock.md      <-- บทวิเคราะห์ Part 3: ข้อสอบควิซในห้อง
+│   ├── Transcript_20260915_130022_NoSQL_BigData_CAP.md          <-- บทวิเคราะห์ Part 4: NoSQL, Big Data, 4 Models, CAP Theorem
 │   ├── 20260908_130406.txt                                       <-- [ถอดความละเอียดทุกคำพูด] Master/Transaction File, ธุรกรรมโอนเงิน
 │   ├── 20260908_131052.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บรรยายหลัก 67 นาที: ACID, 2PL, Lock Matrix
 │   ├── 20260908_143913.txt                                       <-- [ถอดความละเอียดทุกคำพูด] ควิซในห้อง A4 2 ข้อ (ACID & Log Crash)
-│   └── -.txt                                                     <-- [ถอดความละเอียดทุกคำพูด] ไฟล์ซ้ำตรงกับ 20260908_143913.txt
+│   ├── -.txt                                                     <-- [ถอดความละเอียดทุกคำพูด] ไฟล์ซ้ำตรงกับ 20260908_143913.txt
+│   └── 20260915_130022.txt                                       <-- [ถอดความละเอียดทุกคำพูด] NoSQL, 4 Data Models, CAP Theorem, นัดแล็บ
 │
 ├── 03_Data_Structures_and_Algorithms\                            <-- วิชาโครงสร้างข้อมูลและอัลกอริทึม (DSA - Python)
-│   ├── [README.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/README.md)                                                 <-- สรุปวิชา DSA, สารบัญภาพ DSA-pic 87 ภาพ, ข้อสอบปลายภาค
-│   ├── [Transcript_20260902_Hashing_Lecture.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260902_Hashing_Lecture.md)                    <-- บทวิเคราะห์ Hashing & Collision Resolution พร้อมภาพสไลด์
-│   ├── [Transcript_20260902_PriorityQueue_BinaryHeap.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260902_PriorityQueue_BinaryHeap.md)           <-- บทวิเคราะห์ Priority Queue & Binary Heap พร้อมภาพสไลด์
-│   ├── [Transcript_20260902_Exam_Focus_Node_Calculation.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260902_Exam_Focus_Node_Calculation.md)        <-- บทวิเคราะห์จุดออกสอบข้อ 2 (คำนวณโหนดสูง 10) พร้อมภาพสไลด์
-│   ├── [Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md)<-- บทวิเคราะห์โค้ด Python และโจทย์ DeleteMin 3 รอบ พร้อมภาพสไลด์
+│   ├── README.md                                                 <-- สรุปวิชา DSA, สารบัญภาพ DSA-pic 87 ภาพ, ข้อสอบปลายภาค
+│   ├── Transcript_20260902_Hashing_Lecture.md                    <-- บทวิเคราะห์ Hashing & Collision Resolution พร้อมภาพสไลด์
+│   ├── Transcript_20260902_PriorityQueue_BinaryHeap.md           <-- บทวิเคราะห์ Priority Queue & Binary Heap พร้อมภาพสไลด์
+│   ├── Transcript_20260902_Exam_Focus_Node_Calculation.md        <-- บทวิเคราะห์จุดออกสอบข้อ 2 (คำนวณโหนดสูง 10) พร้อมภาพสไลด์
+│   ├── Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md<-- บทวิเคราะห์โค้ด Python และโจทย์ DeleteMin 3 รอบ พร้อมภาพสไลด์
 │   ├── 20260902_091736.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 7: Separate Chaining & Linear Probing
 │   ├── 20260902_094834.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 7: Quadratic Probing & Double Hashing
 │   ├── 20260902_104259.txt                                       <-- [ถอดความละเอียด] เสียงพักเบรก 2 วินาที
@@ -52,7 +54,7 @@ C:\Project\Voice\
 │   ├── dsa20260909_092220.txt                                    <-- [ถอดความละเอียดทุกคำพูด] ย้ำข้อสอบปลายภาคออกเป็น Array
 │   ├── dsa20260909_092303.txt                                    <-- [ถอดความละเอียดทุกคำพูด] 🔥 ไล่โค้ดคลาส BinaryHeap, insert, percolate up
 │   ├── 20260909_103704.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 ไล่โค้ด deleteMin, การบ้านเที่ยงตรง, ข้อสอบ 3 รอบ
-│   └── [DSA-pic/](file:///C:/Project/Voice/DSA-pic/)                                                  <-- คลังภาพกระดานและสไลด์ 87 ภาพ (เชื่อมโยงภาพถ่ายกับการบรรยาย)
+│   └── DSA-pic/                                                  <-- คลังภาพกระดานและสไลด์ 87 ภาพ (เชื่อมโยงภาพถ่ายกับการบรรยาย)
 │
 ├── 04_Computer_Graphics_Design\                                  <-- วิชาคอมพิวเตอร์กราฟิกส์ (Adobe Illustrator)
 │   ├── README.md                                                 <-- สรุปกฎสอบ 9.00-12.00 น., ให้เน็ต 10 นาที, สอบปฏิบัติ 4 ข้อ
@@ -69,15 +71,20 @@ C:\Project\Voice\
 │   ├── Transcript_20260409_Broker_MT5_EA_Support.md              <-- บทวิเคราะห์การสนทนากับฝ่ายบริการลูกค้า
 │   └── 20260409_105602.txt                                       <-- [ถอดความละเอียดทุกคำพูด] คุยกับคุณบัว โบรกเกอร์ MT5 EA ถอนกำไร
 │
-└── Success\                                                      <-- แหล่งจัดเก็บไฟล์เสียงต้นฉบับทั้ง 23 ไฟล์ที่แปลเสร็จแล้ว (.aac)
+├── 07_Software_Engineering\                                      <-- วิชาวิศวกรรมซอฟต์แวร์ (Software Engineering - Use Case Modeling)
+│   ├── README.md                                                 <-- สรุปวิชา, องค์ประกอบ Use Case, Include vs Extend, กำหนดส่งงาน
+│   ├── Transcript_20260915_092638_UseCase_Diagram.md             <-- บทวิเคราะห์ Use Case Diagram, System Boundary & Library Case Study
+│   └── SE20260915_092638.txt                                     <-- [ถอดความละเอียดทุกคำพูด] บรรยาย Use Case Diagram, ระบบห้องสมุด
+│
+└── Success\                                                      <-- แหล่งจัดเก็บไฟล์เสียงต้นฉบับทั้ง 25 ไฟล์ที่แปลเสร็จแล้ว (.aac)
 ```
 
 ---
 
-## 📊 ตารางแสดงความสัมพันธ์ของไฟล์เสียงทั้งหมด 23 ไฟล์ (Master Mapping Table)
+## 📊 ตารางแสดงความสัมพันธ์ของไฟล์เสียงทั้งหมด 25 ไฟล์ (Master Mapping Table)
 
 > [!NOTE]
-> **สถานะการจัดเก็บไฟล์เสียง:** ไฟล์เสียงต้นฉบับทั้ง 23 ไฟล์ ได้รับการถอดความและวิเคราะห์เรียบร้อยแล้วทั้งหมด และถูกย้ายไปจัดเก็บอย่างเป็นระเบียบในโฟลเดอร์ **`C:\Project\Voice\Success\`** เรียบร้อยแล้ว เพื่อให้รูทของโฟลเดอร์ `Voice/` เป็นระเบียบและพร้อมรับไฟล์เสียงใหม่เข้ามาประมวลผลตามคู่มือ [**`main.md`**](file:///C:/Project/Voice/main.md)
+> **สถานะการจัดเก็บไฟล์เสียง:** ไฟล์เสียงต้นฉบับทั้ง 25 ไฟล์ ได้รับการถอดความและวิเคราะห์เรียบร้อยแล้วทั้งหมด และถูกย้ายไปจัดเก็บอย่างเป็นระเบียบในโฟลเดอร์ **`C:\Project\Voice\Success\`** เรียบร้อยแล้ว เพื่อให้รูทของโฟลเดอร์ `Voice/` เป็นระเบียบและพร้อมรับไฟล์เสียงใหม่เข้ามาประมวลผลตามคู่มือ [**`main.md`**](file:///C:/Project/Voice/main.md)
 
 | ลำดับ | ชื่อไฟล์เสียง (จัดเก็บใน `Success/`) | วันที่บันทึก | ความยาว | หมวดหมู่วิชา / โฟลเดอร์ | สาระสำคัญ / การดำเนินการ |
 | :---: | :--- | :---: | :---: | :--- | :--- |
@@ -104,6 +111,8 @@ C:\Project\Voice\
 | 21 | `dsa20260909_092303.aac`| 09/09/2569 | 50m 01s | `03_Data_Structures_and_Algorithms` | **🔥 ข้อสอบปลายภาค!** ไล่โค้ดคลาส BinaryHeap: `__init__`, `insert` |
 | 22 | `20260909_103704.aac` | 09/09/2569 | 81m 39s | `03_Data_Structures_and_Algorithms` | **🔥 ข้อสอบปลายภาค!** ไล่โค้ด `deleteMin`, ข้อสอบให้ทำ 3 รอบ |
 | 23 | `In20260911_114230.aac` | 11/09/2569 | 2m 23s | `01_Innovative_Technopreneurs` | การบริหารความเสี่ยงเคสร้านกาแฟ, ย้ำส่ง PDF วันที่ 1, คะแนนเต็ม 28 |
+| 24 | `SE20260915_092638.aac`| 15/09/2569 | 60m 27s | `07_Software_Engineering` | บรรยาย Use Case Diagram, 4 Elements (Actor, Use Case, Boundary, Relations), Include vs Extend, ระบบห้องสมุด |
+| 25 | `20260915_130022.aac` | 15/09/2569 | 67m 51s | `02_Database_System` | บรรยาย NoSQL vs RDBMS, Big Data (5 Vs), โมเดล 4 ชนิด (Key-Value, Column, Graph, Document), CAP Theorem, นัดแล็บ 2 สัปดาห์ |
 
 ---
 
@@ -112,10 +121,15 @@ C:\Project\Voice\
 | วันที่ตามกำหนด | เวลา | วิชาที่เกี่ยวข้อง | กิจกรรม / สิ่งที่ต้องส่ง / ข้อกำหนด |
 | :--- | :--- | :--- | :--- |
 | **09/09/2569** | **12.00 น. (เที่ยง)** | Data Structures & Algorithms | **ส่ง Assignment การบ้านในคาบ:** ทำ DeleteMin 1 ครั้ง และแปลงค่าลงในช่อง Array ส่งผ่าน Google Classroom |
+| **15/09/2569** | **10.00 น.** | Software Engineering | **ประชาสัมพันธ์โครงการ IAESTE:** โครงการฝึกงานต่างประเทศ ณ ห้อง Spark ชั้น 1 |
+| **สัปดาห์นี้** | ตามกำหนดใน Classroom | Software Engineering | **ส่งการบ้าน Use Case Diagram:** อาจารย์จะโพสต์โจทย์ Assignment เข้าสู่ Google Classroom ให้เขียนไดอะแกรมส่ง |
+| **สัปดาห์นี้** | ในระบบ Classroom | Database System | **ส่งงานกลุ่ม ER Diagram:** ตัวแทนกลุ่มอัปโหลดภาพ/เอกสาร ER Diagram เข้าสู่ Google Classroom |
+| **22/09/2569 เป็นต้นไป** | 2 สัปดาห์ติดต่อกัน | Database System | **เรียนภาคปฏิบัติการ Lab 2 สัปดาห์:** งดเรียนห้องบรรยาย ให้ไปเรียนที่ห้องแล็บคอมพิวเตอร์ตามรอบที่ลงชื่อใน Google Sheets เพื่อลงมือสร้าง Database จริง |
 | **01/10/2569** | **ก่อน 12.00 น. (เที่ยง)** | Innovative Technopreneurs | **ส่งไฟล์ดิจิทัลทาง LINE กลุ่มวิชา:**<br>1. ไฟล์เล่มรายงานฉบับสมบูรณ์ (PDF)<br>2. ไฟล์สไลด์นำเสนอ Presentation (PDF) |
 | **02/10/2569** | ในคาบเรียน | Innovative Technopreneurs | **1. ส่งรูปเล่มรายงานฉบับพิมพ์ Hard Copy:** ทุกกลุ่มทั้ง 18 กลุ่มต้องส่งเล่มในวันนี้ (ปริ้นท์ขาวดำได้)<br>**2. การนำเสนอผลงานรอบที่ 1:** สำหรับกลุ่มที่ 1 - 9 (บรรยาย 10 นาที ตอบคำถาม 5 นาที) |
 | **09/10/2569** | ในคาบเรียน | Innovative Technopreneurs | **การนำเสนอผลงานรอบที่ 2:** สำหรับกลุ่มที่ 10 - 18 (บรรยาย 10 นาที ตอบคำถาม 5 นาที) |
 | **วันสอบปลายภาค** | 09.00 - 12.00 น. | Computer Graphics & Design | **สอบปฏิบัติปลายภาค 3 ชั่วโมงเต็ม (Open Book):** ห้ามเข้าสายเกิน 09.10 น., ให้เน็ต 10 นาทีแรกยืนยันตัวตน, มี 4 ข้อ ข้อละ 75 คะแนน รวม 300 คะแนน |
+| **วันสอบปลายภาค** | 3 ชั่วโมงเต็ม | Database System | **สอบปลายภาคข้อเขียน 40 คะแนนเต็ม!** ห้ามออกจากห้องสอบก่อน 1 ชั่วโมงแรก ครอบคลุม Transaction, ACID, Locking, Crash Recovery, RDBMS vs NoSQL, และ CAP Theorem |
 | **วันสอบปลายภาค** | ตามตารางสอบ | Data Structures & Algorithms | **สอบข้อเขียน/ปฏิบัติปลายภาค:** มี 6-7 ข้อใหญ่ (มีโจทย์คำนวณโหนดความสูง 10, โจทย์ตารางแฮชเปล่า, และโจทย์ Array เปล่าให้ทำ DeleteMin 3 ครั้ง) |
 
 ---
@@ -133,8 +147,7 @@ C:\Project\Voice\
    - Left Child = $2i$, Right Child = $2i + 1$
    - Parent = $\lfloor i / 2 \rfloor$ (**ตัดเศษทิ้งเสมอ เช่น โหนด 7 พ่อคือ 3 ไม่ใช่ 4**)
 3. **ข้อสอบไล่โค้ด DeleteMin ปลายภาค:**
-   - อาจารย์แง้มว่า ในข้อสอบจะให้ทำ **DeleteMin ติดต่อกัน 3 รอบ** แล้วเขียนสถานะของ Array สุดท้ายลงในตารางช่องสี่เหลี่ยมที่อาจารย์เตรียมไว้ให้
-   - ต้องบริหารเวลาให้ทำเสร็จภายใน 5-10 นาทีต่อข้อ
+   - ในข้อสอบจะให้ทำ **DeleteMin ติดต่อกัน 3 รอบ** แล้วเขียนสถานะของ Array สุดท้ายลงในตารางช่องสี่เหลี่ยมที่อาจารย์เตรียมไว้ให้
 4. **ข้อสอบตารางแฮช (Hashing):**
    - ให้ตารางแฮชเปล่ามา พร้อมฟังก์ชัน $h_i(x) = (\text{hash}(x) + f(i)) \pmod{\text{Table\_Size}}$ ให้นำค่ามาแฮชและแก้ปัญหาการชนลงตาราง
 
@@ -146,9 +159,22 @@ C:\Project\Voice\
 3. **การกู้คืนหลังเซิร์ฟเวอร์ล่ม (Crash Recovery):**
    - ตรวจสอบจาก Log File: รายการที่มี `COMMIT` แล้ว $\rightarrow$ ให้สั่ง **REDO**
    - รายการที่มี `START` แต่ยังไม่มี `COMMIT` $\rightarrow$ ให้สั่ง **UNDO / ROLLBACK**
-4. **หัวข้อในสัปดาห์ถัดไป:** อาจารย์ประกาศว่าจะเรียนและทำโจทย์เรื่อง **Normalization**
+4. **การเปรียบเทียบ RDBMS vs NoSQL & Big Data:**
+   - ข้อจำกัด RDBMS: Join are expensive, Hard to scale-out horizontally, Impedance mismatch
+   - โมเดล NoSQL 4 ชนิด: Key-Value (DynamoDB), Column Family (Cassandra เขียนเร็ว 0.12ms ด้วย Append-only), Graph (Neo4j เหมาะกับ Social Network), Document (MongoDB เก็บ JSON/BSON)
+   - ทฤษฎีบท **CAP Theorem:** ระบบกระจายศูนย์เลือกได้มากสุด 2 จาก 3 (RDBMS = CA, MongoDB = CP, Cassandra = AP)
+5. **ข้อสอบปลายภาค 40 คะแนนเต็ม (สอบ 3 ชั่วโมงเต็ม):** ห้ามออกจากห้องสอบก่อน 1 ชั่วโมงแรก ต้องบริหารเวลาทำข้อสอบให้ทัน
 
-### 3. วิชา Computer Graphics & Design (Adobe Illustrator)
+### 3. วิชา Software Engineering
+1. **การแยกแยะระหว่าง `<<include>>` กับ `<<extend>>`:**
+   - ถ้าฟังก์ชันย่อยต้องทำ **ทุกครั้ง ขาดไม่ได้** $\rightarrow$ ใช้ **`<<include>>`** (ลูกศรชี้จาก Base ไปหาตัวช่วย) เช่น `Withdraw` $\rightarrow$ `<<include>>` $\rightarrow$ `Login`
+   - ถ้าฟังก์ชันย่อยเกิด **เฉพาะบางกรณี เป็นทางเลือก** $\rightarrow$ ใช้ **`<<extend>>`** (ลูกศรชี้จากตัวเสริมกลับมาหา Base) เช่น `Login` $\leftarrow$ `<<extend>>` $\leftarrow$ `Request OTP` หรือ `Change Password`
+2. **กฎการวาด Use Case Diagram:**
+   - Use Case ต้องเป็น **วงรี** เท่านั้น ตั้งชื่อด้วย **Verb + Object** (ห้ามใส่ Action ละเอียดระดับปุ่ม เช่น "Click button")
+   - Actor ต้องเป็นรูป **Stickman** แทน **Role** (ห้ามใส่ชื่อบุคคลเฉพาะเจาะจง และห้ามใส่ Database หรือ Server ภายในเป็น Actor)
+   - Actor ต้องอยู่นอกกรอบ System Boundary เสมอ และ Use Case ต้องอยู่ในกรอบเสมอ
+
+### 4. วิชา Computer Graphics & Design (Adobe Illustrator)
 1. **ข้อสอบปฏิบัติ 4 ข้อ ข้อละ 75 คะแนน (รวม 300 คะแนน):**
    - ข้อ 1: 3D Effect เลือกระหว่าง **Revolve** (หมุนแกนทรงสมมาตร) หรือ **Extrude & Bevel** (ดึงความหนา)
    - ข้อ 2: 3D Effect ผสานการใช้ **Offset Path** ขยายขอบ และ **Pathfinder** (Unite/Minus)
