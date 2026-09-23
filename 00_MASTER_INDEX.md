@@ -1,15 +1,15 @@
 # สารบัญและรายงานวิเคราะห์ไฟล์เสียงฉบับสมบูรณ์ (Master Voice Index & Intelligence Report)
 **ตำแหน่งไดเรกทอรี:** `C:\Project\Voice\`  
-**วันที่ประมวลผลล่าสุด:** 16 กันยายน 2569  
-**จำนวนไฟล์เสียงทั้งหมด:** 27 ไฟล์เสียง (.aac) + 1 โฟลเดอร์ภาพประกอบ (`DSA-pic/` รวม 92 ภาพ)  
+**วันที่ประมวลผลล่าสุด:** 23 กันยายน 2569  
+**จำนวนไฟล์เสียงทั้งหมด:** 39 รายการไฟล์เสียง (.aac) + โฟลเดอร์ภาพประกอบ (`DSA-pic/` รวม 106 ภาพ + ภาพแล็บฐานข้อมูลใน `02_Database_System/` 3 ภาพ)  
 
 ---
 
 ## 🧭 การจัดหมวดหมู่วิชาและโครงสร้างโฟลเดอร์ (Directory Structure)
 
-ตามคำสั่งของผู้ใช้งาน ได้ทำการแยกไฟล์เสียงออกเป็น **7 กลุ่มวิชาและโปรเจกต์** โดยสร้างโฟลเดอร์ไว้ภายใน `C:\Project\Voice\` ดังนี้:
+ตามคำสั่งของผู้ใช้งาน ได้ทำการแยกไฟล์เสียงออกเป็น **8 กลุ่มวิชาและโปรเจกต์** โดยสร้างโฟลเดอร์ไว้ภายใน `C:\Project\Voice\` ดังนี้:
 
-```
+```text
 C:\Project\Voice\
 ├── 00_MASTER_INDEX.md                                           <-- ไฟล์นี้ (สารบัญและรายงานภาพรวมทั้งหมด)
 ├── main.md                                                      <-- คู่มือกระบวนการทำงานสำหรับ AI (AI Workflow & Operating Guide)
@@ -19,105 +19,116 @@ C:\Project\Voice\
 │   ├── Transcript_20260126_Customer_Validation.md                <-- บทวิเคราะห์สัมภาษณ์ลูกค้า 2 ราย
 │   ├── Transcript_20260904_Final_Report_Guidelines.md            <-- บทวิเคราะห์คำสั่งรายงาน 10 หัวข้อ, กฎ BMC
 │   ├── Transcript_20260911_Risk_Management_Deadlines.md          <-- บทวิเคราะห์เรื่องบริหารความเสี่ยง และคะแนน
-│   ├── 20260126_162937.txt                                       <-- [ถอดความละเอียดทุกคำพูด] สัมภาษณ์ลูกค้า #1 (ขนาด 3 แบบ, เตือน PM2.5)
-│   ├── 20260126_164100.txt                                       <-- [ถอดความละเอียดทุกคำพูด] สัมภาษณ์ลูกค้า #2 (ฟีดแบ็กห้าง/ออฟฟิศ)
-│   ├── 20260904_105814.txt                                       <-- [ถอดความละเอียดทุกคำพูด] สั่งรายงานเล่มจบ 10 หัวข้อ, กฎ BMC 1 หน้า
-│   └── In20260911_114230.txt                                     <-- [ถอดความละเอียดทุกคำพูด] การบริหารความเสี่ยงร้านกาแฟ, คะแนนเต็ม 28
+│   ├── 20260126_162937.txt                                       <-- [ถอดความละเอียดทุกคำพูด] สัมภาษณ์ลูกค้า #1
+│   ├── 20260126_164100.txt                                       <-- [ถอดความละเอียดทุกคำพูด] สัมภาษณ์ลูกค้า #2
+│   ├── 20260904_105814.txt                                       <-- [ถอดความละเอียดทุกคำพูด] สั่งรายงานเล่มจบ 10 หัวข้อ
+│   └── In20260911_114230.txt                                     <-- [ถอดความละเอียดทุกคำพูด] การบริหารความเสี่ยง, คะแนนเต็ม 28
 │
-├── 02_Database_System\                                           <-- วิชาระบบฐานข้อมูล (Transaction, Lock Matrix, NoSQL & CAP Theorem)
-│   ├── README.md                                                 <-- สรุปวิชา, ACID, Lock Matrix S/X, NoSQL, CAP Theorem, แล็บ 2 สัปดาห์
+├── 02_Database_System\                                           <-- วิชาระบบฐานข้อมูล (Transaction, NoSQL, DDL/DML, Error 1074)
+│   ├── README.md                                                 <-- สรุปวิชา, ACID, Lock Matrix, NoSQL, DDL/DML CLI
 │   ├── Transcript_20260908_130406_Transaction_Basics.md          <-- บทวิเคราะห์ Part 1: แฟ้ม Master/Transaction
 │   ├── Transcript_20260908_131052_Concurrency_ACID_Recovery.md  <-- บทวิเคราะห์ Part 2: ACID, Concurrency, Recovery
 │   ├── Transcript_20260908_143913_InClass_Quiz_ACID_Lock.md      <-- บทวิเคราะห์ Part 3: ข้อสอบควิซในห้อง
-│   ├── Transcript_20260915_130022_NoSQL_BigData_CAP.md          <-- บทวิเคราะห์ Part 4: NoSQL, Big Data, 4 Models, CAP Theorem
-│   ├── 20260908_130406.txt                                       <-- [ถอดความละเอียดทุกคำพูด] Master/Transaction File, ธุรกรรมโอนเงิน
-│   ├── 20260908_131052.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บรรยายหลัก 67 นาที: ACID, 2PL, Lock Matrix
-│   ├── 20260908_143913.txt                                       <-- [ถอดความละเอียดทุกคำพูด] ควิซในห้อง A4 2 ข้อ (ACID & Log Crash)
-│   ├── -.txt                                                     <-- [ถอดความละเอียดทุกคำพูด] ไฟล์ซ้ำตรงกับ 20260908_143913.txt
-│   └── 20260915_130022.txt                                       <-- [ถอดความละเอียดทุกคำพูด] NoSQL, 4 Data Models, CAP Theorem, นัดแล็บ
+│   ├── Transcript_20260915_130022_NoSQL_BigData_CAP.md          <-- บทวิเคราะห์ Part 4: NoSQL, Big Data, CAP Theorem
+│   ├── Transcript_20260922_DB_Lab_DDL_DML_ERROR1074.md           <-- 🔥 บทวิเคราะห์เจาะลึกแล็บ DDL/DML, Constraints, ERROR 1074 CHAR(500)
+│   ├── 20260908_130406.txt                                       <-- [ถอดความละเอียดทุกคำพูด] Master/Transaction File
+│   ├── 20260908_131052.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บรรยายหลัก 67 นาที: ACID
+│   ├── 20260908_143913.txt                                       <-- [ถอดความละเอียดทุกคำพูด] ควิซในห้อง A4 2 ข้อ
+│   ├── 20260915_130022.txt                                       <-- [ถอดความละเอียดทุกคำพูด] NoSQL, CAP Theorem
+│   ├── 20260922_131058.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 ปฏิบัติการแล็บ DDL, XAMPP CLI, utf8mb4, ERROR 1074
+│   ├── IMG_20260922_124841_660@1996423590.jpg                    <-- โครงสร้างตารางใน phpMyAdmin
+│   ├── IMG_20260922_142452_298@-1416416793.jpg                   <-- ภาพหน้าจอ ERROR 1074 CHAR(500) limit
+│   └── IMG_20260922_142503_490@2024331400.jpg                    <-- ภาพหน้าจอคำสั่ง DDL ALTER TABLE
 │
 ├── 03_Data_Structures_and_Algorithms\                            <-- วิชาโครงสร้างข้อมูลและอัลกอริทึม (DSA - Python)
-│   ├── README.md                                                 <-- สรุปวิชา DSA, สารบัญภาพ DSA-pic 92 ภาพ, ข้อสอบปลายภาค
-│   ├── Transcript_20260902_Hashing_Lecture.md                    <-- บทวิเคราะห์ Hashing & Collision Resolution พร้อมภาพสไลด์
-│   ├── Transcript_20260902_PriorityQueue_BinaryHeap.md           <-- บทวิเคราะห์ Priority Queue & Binary Heap พร้อมภาพสไลด์
-│   ├── Transcript_20260902_Exam_Focus_Node_Calculation.md        <-- บทวิเคราะห์จุดออกสอบข้อ 2 (คำนวณโหนดสูง 10) พร้อมภาพสไลด์
-│   ├── Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md<-- บทวิเคราะห์โค้ด Python และโจทย์ DeleteMin 3 รอบ พร้อมภาพสไลด์
-│   ├── Transcript_20260916_Comparison_Sorting_Insertion_Selection_Bubble_Exam_Trace.md <-- 🔥 บทวิเคราะห์เจาะลึก Sorting 3 แบบ, Position Move, Inversions, และเฉลยข้อสอบใบงาน
-│   ├── 20260902_091736.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 7: Separate Chaining & Linear Probing
-│   ├── 20260902_094834.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 7: Quadratic Probing & Double Hashing
-│   ├── 20260902_104259.txt                                       <-- [ถอดความละเอียด] เสียงพักเบรก 2 วินาที
-│   ├── 20260902_104304.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 7: Rehashing & ตารางแฮชใหม่ 17 ช่อง
-│   ├── 20260902_110748.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 8: นิยามคิว และสิทธิพิเศษการแซงคิว
-│   ├── 20260902_111515.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 8: Heap กองทราย, Min-Heap, 2 คุณสมบัติ
-│   ├── 20260902_112213.txt                                       <-- [ถอดความละเอียดทุกคำพูด] Complete Binary Tree ใส่ซ้ายไปขวา ลบขวาไปซ้าย
-│   ├── 20260902_112628.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 ข้อสอบข้อ 2: คำนวณโหนดสูง 10 (1024/2047)
-│   ├── 20260902_113741.txt                                       <-- [ถอดความละเอียดทุกคำพูด] แปลง Tree เป็น Array 1D (2i, 2i+1, i//2)
-│   ├── dsa20260909_092220.txt                                    <-- [ถอดความละเอียดทุกคำพูด] ย้ำข้อสอบปลายภาคออกเป็น Array
-│   ├── dsa20260909_092303.txt                                    <-- [ถอดความละเอียดทุกคำพูด] 🔥 ไล่โค้ดคลาส BinaryHeap, insert, percolate up
-│   ├── 20260909_103704.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 ไล่โค้ด deleteMin, การบ้านเที่ยงตรง, ข้อสอบ 3 รอบ
-│   ├── 20260916_092007.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 บทที่ 9: Sorting สัญนิยมเรียง, Insertion Sort และ Position Move
-│   ├── 20260916_102037.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 Selection Sort, range(0), Bubble Sort, Inversion, ใบงานควิซท้ายคาบ
-│   └── DSA-pic/                                                  <-- คลังภาพกระดานและสไลด์ 92 ภาพ (เชื่อมโยงภาพถ่ายกับการบรรยาย)
+│   ├── README.md                                                 <-- สรุปวิชา DSA, สารบัญภาพ DSA-pic 106 ภาพ, ข้อสอบปลายภาค
+│   ├── Transcript_20260902_Hashing_Lecture.md                    <-- บทวิเคราะห์ Hashing & Collision Resolution
+│   ├── Transcript_20260902_PriorityQueue_BinaryHeap.md           <-- บทวิเคราะห์ Priority Queue & Binary Heap
+│   ├── Transcript_20260902_Exam_Focus_Node_Calculation.md        <-- บทวิเคราะห์จุดออกสอบข้อ 2 (คำนวณโหนดสูง 10)
+│   ├── Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md<-- บทวิเคราะห์โค้ด Python และโจทย์ DeleteMin 3 รอบ
+│   ├── Transcript_20260916_Comparison_Sorting_Insertion_Selection_Bubble_Exam_Trace.md <-- บทวิเคราะห์เจาะลึก Sorting 3 แบบ
+│   ├── Transcript_20260923_Graph_Theory_Representations_Exam_Leaks.md <-- 🔥 บทวิเคราะห์เจาะลึก Graph Theory, ข้อสอบรั่ว 14 ภาพ, Memory Waste 24.48% vs 75.51%
+│   ├── 20260902_091736.txt ถึง 20260916_102037.txt (12 ไฟล์)    <-- [ถอดความละเอียดทุกคำพูด] Hashing, Heap, Sorting
+│   ├── 20260923_091645.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 บทที่ 10 Graph, ทฤษฎีกราฟ, ข้อสอบรั่ว Complete Graph 45 เส้น
+│   └── DSA-pic/                                                  <-- คลังภาพกระดานและสไลด์ 106 ภาพ (เชื่อมโยงกับการบรรยาย)
 │
 ├── 04_Computer_Graphics_Design\                                  <-- วิชาคอมพิวเตอร์กราฟิกส์ (Adobe Illustrator)
-│   ├── README.md                                                 <-- สรุปกฎสอบ 9.00-12.00 น., ให้เน็ต 10 นาที, สอบปฏิบัติ 4 ข้อ
+│   ├── README.md                                                 <-- สรุปกฎสอบ 9.00-12.00 น., ให้เน็ต 10 นาที
 │   ├── Transcript_20260302_Final_Exam_Briefing.md                <-- บทวิเคราะห์ข้อสอบปฏิบัติ 4 ข้อ 300 คะแนน
-│   └── 20260302_093603.txt                                       <-- [ถอดความละเอียดทุกคำพูด] ชี้แจงข้อสอบ 4 ข้อ (3D Revolve, Tesla, Pen Tool)
+│   └── 20260302_093603.txt                                       <-- [ถอดความละเอียดทุกคำพูด] ชี้แจงข้อสอบ 4 ข้อ
 │
 ├── 05_Technical_English\                                         <-- วิชาภาษาอังกฤษเชิงเทคนิคเพื่อการสื่อสาร
-│   ├── README.md                                                 <-- สรุปบทพูดนำเสนอ Custom PC และงานอดิเรกดนตรี
+│   ├── README.md                                                 <-- สรุปบทพูดนำเสนอ Custom PC
 │   ├── Transcript_20260223_Presentation_Practice_Coaching.md     <-- บทวิเคราะห์การซ้อมพรีเซนต์
-│   └── 20260223_143626.txt                                       <-- [ถอดความละเอียดทุกคำพูด] ซ้อมพรีเซนต์เดี่ยว, ออกเสียง Piece, Satisfaction
+│   └── 20260223_143626.txt                                       <-- [ถอดความละเอียดทุกคำพูด] ซ้อมพรีเซนต์เดี่ยว
 │
 ├── 06_Personal_Financial_Trading\                                <-- การเงินส่วนบุคคล / การลงทุนเทรดดิ้ง (Forex & MT5 EA)
-│   ├── README.md                                                 <-- สรุปเงื่อนไขโบนัสเทรดครบ 5 ออเดอร์, การติดตั้ง EA บน MT5
+│   ├── README.md                                                 <-- สรุปเงื่อนไขโบนัสเทรดครบ 5 ออเดอร์
 │   ├── Transcript_20260409_Broker_MT5_EA_Support.md              <-- บทวิเคราะห์การสนทนากับฝ่ายบริการลูกค้า
-│   └── 20260409_105602.txt                                       <-- [ถอดความละเอียดทุกคำพูด] คุยกับคุณบัว โบรกเกอร์ MT5 EA ถอนกำไร
+│   └── 20260409_105602.txt                                       <-- [ถอดความละเอียดทุกคำพูด] คุยกับโบรกเกอร์ MT5 EA
 │
-├── 07_Software_Engineering\                                      <-- วิชาวิศวกรรมซอฟต์แวร์ (Software Engineering - Use Case Modeling)
-│   ├── README.md                                                 <-- สรุปวิชา, องค์ประกอบ Use Case, Include vs Extend, กำหนดส่งงาน
-│   ├── Transcript_20260915_092638_UseCase_Diagram.md             <-- บทวิเคราะห์ Use Case Diagram, System Boundary & Library Case Study
-│   └── SE20260915_092638.txt                                     <-- [ถอดความละเอียดทุกคำพูด] บรรยาย Use Case Diagram, ระบบห้องสมุด
+├── 07_Software_Engineering\                                      <-- วิชาวิศวกรรมซอฟต์แวร์ (Software Engineering - UML)
+│   ├── README.md                                                 <-- สรุปวิชา, Use Case & Activity Diagram, include vs extend
+│   ├── Transcript_20260915_092638_UseCase_Diagram.md             <-- บทวิเคราะห์ Use Case Diagram, System Boundary
+│   ├── Transcript_20260922_SE_UseCase_Activity_Diagram_Exam_Secrets.md <-- 🔥 บทวิเคราะห์ Case Study ระบบยืมคืนอุปกรณ์, Activity Diagram, ข้อสอบ Final
+│   ├── SE20260915_092638.txt                                     <-- [ถอดความละเอียดทุกคำพูด] บรรยาย Use Case Diagram
+│   └── 20260922_093313.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 Case Study ยืมคืนอุปกรณ์, Activity Diagram สัญลักษณ์ครบ
 │
-└── Success\                                                      <-- แหล่งจัดเก็บไฟล์เสียงต้นฉบับทั้ง 25 ไฟล์ที่แปลเสร็จแล้ว (.aac)
+├── 08_Computer_Networks_and_Internet\                            <-- วิชาเครือข่ายคอมพิวเตอร์และอินเทอร์เน็ต (Network & Link Layer)
+│   ├── README.md                                                 <-- สรุปวิชา, Distance Vector, BGP, CRC, MAC Protocols
+│   ├── Transcript_20260914_Network_Routing_DistanceVector_BGP.md <-- บทวิเคราะห์ Routing Algorithm, Bellman-Ford, Count-to-Infinity, BGP
+│   ├── Transcript_20260921_LinkLayer_CRC_MAC_Protocols.md        <-- 🔥 บทวิเคราะห์ Link Layer, ตรวจจับ Error (Parity, Checksum, CRC), Multiple Access Protocols
+│   ├── 20260914_132959.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 5: Distance Vector & Hierarchical Routing
+│   └── 20260921_135415.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 บทที่ 6: Link Layer, การตั้งหาร CRC, TDMA, CSMA/CD, สั่งการบ้าน
+│
+└── Success\                                                      <-- แหล่งจัดเก็บไฟล์เสียงต้นฉบับทั้ง 37 ไฟล์ที่ประมวลผลเสร็จแล้ว (.aac)
 ```
 
 ---
 
-## 📊 ตารางแสดงความสัมพันธ์ของไฟล์เสียงทั้งหมด 25 ไฟล์ (Master Mapping Table)
-
-> [!NOTE]
-> **สถานะการจัดเก็บไฟล์เสียง:** ไฟล์เสียงต้นฉบับทั้ง 25 ไฟล์ ได้รับการถอดความและวิเคราะห์เรียบร้อยแล้วทั้งหมด และถูกย้ายไปจัดเก็บอย่างเป็นระเบียบในโฟลเดอร์ **`C:\Project\Voice\Success\`** เรียบร้อยแล้ว เพื่อให้รูทของโฟลเดอร์ `Voice/` เป็นระเบียบและพร้อมรับไฟล์เสียงใหม่เข้ามาประมวลผลตามคู่มือ [**`main.md`**](file:///C:/Project/Voice/main.md)
+## 📊 ตารางแสดงความสัมพันธ์ของไฟล์เสียงทั้งหมด 37 ไฟล์ (Master Mapping Table)
 
 | ลำดับ | ชื่อไฟล์เสียง (จัดเก็บใน `Success/`) | วันที่บันทึก | ความยาว | หมวดหมู่วิชา / โฟลเดอร์ | สาระสำคัญ / การดำเนินการ |
 | :---: | :--- | :---: | :---: | :--- | :--- |
-| 1 | `20260126_162937.aac` | 26/01/2569 | 2m 48s | `01_Innovative_Technopreneurs` | สัมภาษณ์ Customer Validation #1 โครงการ Smart Green Wall |
-| 2 | `20260126_164100.aac` | 26/01/2569 | 2m 41s | `01_Innovative_Technopreneurs` | สัมภาษณ์ Customer Validation #2 โครงการ Smart Green Wall |
-| 3 | `20260223_143626.aac` | 23/02/2569 | 26m 21s | `05_Technical_English` | ซ้อมบทพูดพรีเซนต์เดี่ยว Custom PC และดนตรี |
-| 4 | `20260302_093603.aac` | 02/03/2569 | 5m 16s | `04_Computer_Graphics_Design` | ชี้แจงข้อสอบปฏิบัติปลายภาค 4 ข้อ 300 คะแนน (Illustrator) |
-| 5 | `20260409_105602.aac` | 09/04/2569 | 2m 23s | `06_Personal_Financial_Trading` | ฝ่ายบริการลูกค้าโบรกเกอร์ เงื่อนไขถอนกำไร MT5 / EA |
-| 6 | `20260902_091736.aac` | 02/09/2569 | 29m 51s | `03_Data_Structures_and_Algorithms` | บทที่ 7 Hashing: Separate Chaining & Open Addressing |
+| 1 | `20260126_162937.aac` | 26/01/2569 | 2m 48s | `01_Innovative_Technopreneurs` | สัมภาษณ์ Customer Validation #1 Smart Green Wall |
+| 2 | `20260126_164100.aac` | 26/01/2569 | 2m 41s | `01_Innovative_Technopreneurs` | สัมภาษณ์ Customer Validation #2 Smart Green Wall |
+| 3 | `20260223_143626.aac` | 23/02/2569 | 26m 21s | `05_Technical_English` | ซ้อมบทพูดพรีเซนต์เดี่ยว Custom PC |
+| 4 | `20260302_093603.aac` | 02/03/2569 | 5m 16s | `04_Computer_Graphics_Design` | ชี้แจงข้อสอบปฏิบัติปลายภาค 4 ข้อ 300 คะแนน |
+| 5 | `20260409_105602.aac` | 09/04/2569 | 2m 23s | `06_Personal_Financial_Trading` | ฝ่ายบริการลูกค้าโบรกเกอร์ ถอนกำไร MT5 EA |
+| 6 | `20260902_091736.aac` | 02/09/2569 | 29m 51s | `03_Data_Structures_and_Algorithms` | บทที่ 7 Hashing: Separate Chaining & Linear Probing |
 | 7 | `20260902_094834.aac` | 02/09/2569 | 31m 43s | `03_Data_Structures_and_Algorithms` | บทที่ 7 Hashing: Quadratic Probing & Double Hashing |
 | 8 | `20260902_104259.aac` | 02/09/2569 | 0m 02s | `03_Data_Structures_and_Algorithms` | เสียงช่วงพักเบรกสั้น 2 วินาที |
-| 9 | `20260902_104304.aac` | 02/09/2569 | 23m 49s | `03_Data_Structures_and_Algorithms` | สรุปภาพรวม Hashing เตรียมขึ้น Priority Queue |
+| 9 | `20260902_104304.aac` | 02/09/2569 | 23m 49s | `03_Data_Structures_and_Algorithms` | สรุปภาพรวม Hashing เตรียมขึ้น Heap |
 | 10 | `20260902_110748.aac` | 02/09/2569 | 7m 09s | `03_Data_Structures_and_Algorithms` | บทที่ 8 Priority Queue: นิยามคิวและการแซงคิว |
-| 11 | `20260902_111515.aac` | 02/09/2569 | 6m 36s | `03_Data_Structures_and_Algorithms` | บทที่ 8 Heap Structure: รูปทรงพีระมิดกองทราย และ Min-Heap |
-| 12 | `20260902_112213.aac` | 02/09/2569 | 4m 01s | `03_Data_Structures_and_Algorithms` | กฎ Complete Binary Tree: ใส่ซ้ายไปขวา ลบขวาไปซ้าย |
-| 13 | `20260902_112628.aac` | 02/09/2569 | 10m 42s | `03_Data_Structures_and_Algorithms` | **🔥 ข้อสอบข้อ 2!** สูตรคำนวณโหนดความสูง 10 (1024/2047) |
+| 11 | `20260902_111515.aac` | 02/09/2569 | 6m 36s | `03_Data_Structures_and_Algorithms` | บทที่ 8 Heap กองทราย และ Min-Heap |
+| 12 | `20260902_112213.aac` | 02/09/2569 | 4m 01s | `03_Data_Structures_and_Algorithms` | Complete Binary Tree ใส่ซ้ายไปขวา ลบขวาไปซ้าย |
+| 13 | `20260902_112628.aac` | 02/09/2569 | 10m 42s | `03_Data_Structures_and_Algorithms` | **🔥 ข้อสอบข้อ 2:** คำนวณโหนดความสูง 10 (1024/2047) |
 | 14 | `20260902_113741.aac` | 02/09/2569 | 7m 02s | `03_Data_Structures_and_Algorithms` | สูตร Array 1D: Root=1, Left=2i, Right=2i+1, Parent=floor(i/2) |
-| 15 | `20260904_105814.aac` | 04/09/2569 | 9m 10s | `01_Innovative_Technopreneurs` | โครงสร้างเล่มรายงาน 10 หัวข้อ, กฎ BMC 1 หน้า, นัดส่งงาน 1-2 ต.ค. |
-| 16 | `20260908_130406.aac` | 08/09/2569 | 6m 21s | `02_Database_System` | นิยาม Transaction, ชนิดไฟล์ Master/Transaction, เคสโอนเงิน |
-| 17 | `20260908_131052.aac` | 08/09/2569 | 67m 08s | `02_Database_System` | บรรยายหลัก ACID, Concurrency Control, Lock Matrix S/X, Log |
-| 18 | `20260908_143913.aac` | 08/09/2569 | 17m 15s | `02_Database_System` | **🔥 Pop Quiz ในห้อง!** ข้อ 1 ACID / ข้อ 2 Lock Matrix & Log Crash |
-| 19 | `-.aac` | 08/09/2569 | 17m 15s | `02_Database_System` | *ไฟล์ซ้ำ (Duplicate)* ตรงกับ `20260908_143913.aac` |
-| 20 | `dsa20260909_092220.aac`| 09/09/2569 | 0m 36s | `03_Data_Structures_and_Algorithms` | ทบทวนสูตร Array และย้ำว่าข้อสอบออกเป็น Array |
-| 21 | `dsa20260909_092303.aac`| 09/09/2569 | 50m 01s | `03_Data_Structures_and_Algorithms` | **🔥 ข้อสอบปลายภาค!** ไล่โค้ดคลาส BinaryHeap: `__init__`, `insert` |
-| 22 | `20260909_103704.aac` | 09/09/2569 | 81m 39s | `03_Data_Structures_and_Algorithms` | **🔥 ข้อสอบปลายภาค!** ไล่โค้ด `deleteMin`, ข้อสอบให้ทำ 3 รอบ |
-| 23 | `In20260911_114230.aac` | 11/09/2569 | 2m 23s | `01_Innovative_Technopreneurs` | การบริหารความเสี่ยงเคสร้านกาแฟ, ย้ำส่ง PDF วันที่ 1, คะแนนเต็ม 28 |
-| 24 | `SE20260915_092638.aac`| 15/09/2569 | 60m 27s | `07_Software_Engineering` | บรรยาย Use Case Diagram, 4 Elements (Actor, Use Case, Boundary, Relations), Include vs Extend, ระบบห้องสมุด |
-| 25 | `20260915_130022.aac` | 15/09/2569 | 67m 51s | `02_Database_System` | บรรยาย NoSQL vs RDBMS, Big Data (5 Vs), โมเดล 4 ชนิด (Key-Value, Column, Graph, Document), CAP Theorem, นัดแล็บ 2 สัปดาห์ |
-| 26 | `20260916_092007.aac` | 16/09/2569 | 44m 43s | `03_Data_Structures_and_Algorithms` | **🔥 บทที่ 9 Sorting Part 1:** สัญนิยมการเรียง, เจาะลึก Insertion Sort และตาราง Position Move, Best/Worst Case |
-| 27 | `20260916_102037.aac` | 16/09/2569 | 68m 45s | `03_Data_Structures_and_Algorithms` | **🔥 Sorting Part 2:** Selection Sort, range(0), Bubble Sort, สูตรลัด Inversion, ใบงานควิซท้ายคาบ [64, 34, 25, 12, 22, 11, 90] |
+| 15 | `20260904_105814.aac` | 04/09/2569 | 9m 10s | `01_Innovative_Technopreneurs` | โครงสร้างรายงาน 10 หัวข้อ, กฎ BMC 1 หน้า |
+| 16 | `20260908_130406.aac` | 08/09/2569 | 6m 21s | `02_Database_System` | นิยาม Transaction, ชนิดไฟล์ Master/Transaction |
+| 17 | `20260908_131052.aac` | 08/09/2569 | 67m 08s | `02_Database_System` | บรรยายหลัก ACID, Concurrency, Lock Matrix S/X |
+| 18 | `20260908_143913.aac` | 08/09/2569 | 17m 15s | `02_Database_System` | **🔥 Pop Quiz:** ACID & Lock Matrix & Log Crash |
+| 19 | `-.aac` | 08/09/2569 | 17m 15s | `02_Database_System` | *ไฟล์ซ้ำ* ตรงกับ `20260908_143913.aac` |
+| 20 | `dsa20260909_092220.aac`| 09/09/2569 | 0m 36s | `03_Data_Structures_and_Algorithms` | ทบทวนสูตร Array และย้ำข้อสอบออก Array |
+| 21 | `dsa20260909_092303.aac`| 09/09/2569 | 50m 01s | `03_Data_Structures_and_Algorithms` | **🔥 ข้อสอบปลายภาค:** ไล่โค้ด BinaryHeap, insert |
+| 22 | `20260909_103704.aac` | 09/09/2569 | 81m 39s | `03_Data_Structures_and_Algorithms` | **🔥 ข้อสอบปลายภาค:** ไล่โค้ด deleteMin 3 รอบ |
+| 23 | `In20260911_114230.aac` | 11/09/2569 | 2m 23s | `01_Innovative_Technopreneurs` | การบริหารความเสี่ยงร้านกาแฟ |
+| 24 | `20260914_132959.aac` | 14/09/2569 | 84m 12s | `08_Computer_Networks_and_Internet` | **🔥 Routing Algorithms:** Distance Vector, Bellman-Ford |
+| 25 | `20260914_153152.aac` | 14/09/2569 | 16m 28s | `08_Computer_Networks_and_Internet` | **🔥 BGP Routing:** Count-to-Infinity & Autonomous Systems |
+| 26 | `SE20260915_092638.aac`| 15/09/2569 | 60m 27s | `07_Software_Engineering` | บรรยาย Use Case Diagram ระบบห้องสมุด |
+| 27 | `20260915_130022.aac` | 15/09/2569 | 67m 51s | `02_Database_System` | NoSQL, Big Data (5 Vs), CAP Theorem |
+| 28 | `20260916_092007.aac` | 16/09/2569 | 44m 43s | `03_Data_Structures_and_Algorithms` | **🔥 Sorting Part 1:** Insertion Sort, Position Move |
+| 29 | `20260916_102037.aac` | 16/09/2569 | 68m 45s | `03_Data_Structures_and_Algorithms` | **🔥 Sorting Part 2:** Selection Sort, Bubble Sort, Inversion |
+| 30 | `20260921_135415.aac` | 21/09/2569 | 9m 31s | `08_Computer_Networks_and_Internet` | Data Link Layer บทนำ & NIC Controller |
+| 31 | `20260921_140424.aac` | 21/09/2569 | 74m 43s | `08_Computer_Networks_and_Internet` | **🔥 Error Detection:** Parity 1D/2D, Checksum, CRC |
+| 32 | `20260921_153320.aac` | 21/09/2569 | 31m 53s | `08_Computer_Networks_and_Internet` | **🔥 Multiple Access:** TDMA, Slotted ALOHA 37%, CSMA/CD |
+| 33 | `20260921_160636.aac` | 21/09/2569 | 0m 57s | `08_Computer_Networks_and_Internet` | มอบหมายการบ้าน CRC ส่งก่อนเที่ยงคืนวันอังคาร |
+| 34 | `20260922_093313.aac` | 22/09/2569 | 40m 52s | `07_Software_Engineering` | **🔥 ข้อสอบ Final:** Use Case Case Study ยืมคืนอุปกรณ์ |
+| 35 | `20260922_102855.aac` | 22/09/2569 | 28m 36s | `07_Software_Engineering` | **🔥 Activity Diagram:** Start, Stop, Action, Guard, Decision |
+| 36 | `20260922_105854.aac` | 22/09/2569 | 23m 33s | `07_Software_Engineering` | **🔥 Activity Diagram:** Fork, Join, Swimlanes, Login Flow |
+| 37 | `20260922_131058.aac` | 22/09/2569 | 81m 15s | `02_Database_System` | **🔥 DB Lab:** XAMPP MariaDB CLI, utf8mb4, PK/FK Constraints |
+| 38 | `20260922_150154.aac` | 22/09/2569 | 45m 48s | `02_Database_System` | **🔥 จุดตาย ERROR 1074:** CHAR(500) เกิน 255 ต้องใช้ VARCHAR |
+| 39 | `20260923_091645.aac` | 23/09/2569 | 147m 52s| `03_Data_Structures_and_Algorithms` | **🔥 บทที่ 10 Graph Theory:** 14 ภาพกระดาน, ข้อสอบรั่ว Complete Graph 45 เส้น, Adjacency Matrix สิ้นเปลือง 75.51% vs List 30 ช่อง |
 
 ---
 
@@ -125,70 +136,51 @@ C:\Project\Voice\
 
 | วันที่ตามกำหนด | เวลา | วิชาที่เกี่ยวข้อง | กิจกรรม / สิ่งที่ต้องส่ง / ข้อกำหนด |
 | :--- | :--- | :--- | :--- |
-| **09/09/2569** | **12.00 น. (เที่ยง)** | Data Structures & Algorithms | **ส่ง Assignment การบ้านในคาบ:** ทำ DeleteMin 1 ครั้ง และแปลงค่าลงในช่อง Array ส่งผ่าน Google Classroom |
-| **15/09/2569** | **10.00 น.** | Software Engineering | **ประชาสัมพันธ์โครงการ IAESTE:** โครงการฝึกงานต่างประเทศ ณ ห้อง Spark ชั้น 1 |
-| **สัปดาห์นี้** | ตามกำหนดใน Classroom | Software Engineering | **ส่งการบ้าน Use Case Diagram:** อาจารย์จะโพสต์โจทย์ Assignment เข้าสู่ Google Classroom ให้เขียนไดอะแกรมส่ง |
-| **สัปดาห์นี้** | ในระบบ Classroom | Database System | **ส่งงานกลุ่ม ER Diagram:** ตัวแทนกลุ่มอัปโหลดภาพ/เอกสาร ER Diagram เข้าสู่ Google Classroom |
-| **16/09/2569** | **12.00 น. (เที่ยง)** | Data Structures & Algorithms | **ส่ง In-Class Assignment / Quiz:** แบบฝึกหัด Bubble Sort อาร์เรย์ `[64, 34, 25, 12, 22, 11, 90]` (Passes=6, Total Swaps=14, Step 4 trace, Pass 1 result, Swaps after pass 1 = 5) ส่งผ่าน Google Classroom |
-| **22/09/2569 เป็นต้นไป** | 2 สัปดาห์ติดต่อกัน | Database System | **เรียนภาคปฏิบัติการ Lab 2 สัปดาห์:** งดเรียนห้องบรรยาย ให้ไปเรียนที่ห้องแล็บคอมพิวเตอร์ตามรอบที่ลงชื่อใน Google Sheets เพื่อลงมือสร้าง Database จริง |
-| **01/10/2569** | **ก่อน 12.00 น. (เที่ยง)** | Innovative Technopreneurs | **ส่งไฟล์ดิจิทัลทาง LINE กลุ่มวิชา:**<br>1. ไฟล์เล่มรายงานฉบับสมบูรณ์ (PDF)<br>2. ไฟล์สไลด์นำเสนอ Presentation (PDF) |
-| **02/10/2569** | ในคาบเรียน | Innovative Technopreneurs | **1. ส่งรูปเล่มรายงานฉบับพิมพ์ Hard Copy:** ทุกกลุ่มทั้ง 18 กลุ่มต้องส่งเล่มในวันนี้ (ปริ้นท์ขาวดำได้)<br>**2. การนำเสนอผลงานรอบที่ 1:** สำหรับกลุ่มที่ 1 - 9 (บรรยาย 10 นาที ตอบคำถาม 5 นาที) |
-| **09/10/2569** | ในคาบเรียน | Innovative Technopreneurs | **การนำเสนอผลงานรอบที่ 2:** สำหรับกลุ่มที่ 10 - 18 (บรรยาย 10 นาที ตอบคำถาม 5 นาที) |
-| **วันสอบปลายภาค** | 09.00 - 12.00 น. | Computer Graphics & Design | **สอบปฏิบัติปลายภาค 3 ชั่วโมงเต็ม (Open Book):** ห้ามเข้าสายเกิน 09.10 น., ให้เน็ต 10 นาทีแรกยืนยันตัวตน, มี 4 ข้อ ข้อละ 75 คะแนน รวม 300 คะแนน |
-| **วันสอบปลายภาค** | 3 ชั่วโมงเต็ม | Database System | **สอบปลายภาคข้อเขียน 40 คะแนนเต็ม!** ห้ามออกจากห้องสอบก่อน 1 ชั่วโมงแรก ครอบคลุม Transaction, ACID, Locking, Crash Recovery, RDBMS vs NoSQL, และ CAP Theorem |
-| **วันสอบปลายภาค** | ตามตารางสอบ | Data Structures & Algorithms | **สอบข้อเขียน/ปฏิบัติปลายภาค:** มี 6-7 ข้อใหญ่ (มีโจทย์คำนวณโหนดความสูง 10, โจทย์ตารางแฮชเปล่า, โจทย์ DeleteMin 3 ครั้ง, และโจทย์ไล่ตาราง Insertion/Selection/Bubble Sort ห้ามตอบแค่อาร์เรย์ผลลัพธ์สุดท้าย) |
+| **22/09/2569** | **23:59 น. (เที่ยงคืน)** | Software Engineering | **ส่ง Use Case Diagram เวิร์กช็อป:** ออกแบบระบบยืม-คืนอุปกรณ์ห้องปฏิบัติการ (Student/Staff $\rightarrow$ Member, Include, Extend) ผ่าน Google Classroom |
+| **22/09/2569** | **23:59 น. (เที่ยงคืน)** | Computer Networks | **ส่งการบ้านคำนวณ CRC:** แสดงขั้นตอนการตั้งหาร XOR หาเศษ CRC จาก $D = 100100$ และ $G = x^3+1 (1001)$ ส่งผ่าน Google Classroom |
+| **27/09/2569** | **23:59 น. (เที่ยงคืน)** | Data Structures & Algorithms | **ส่ง Take-Home Programming Assignment 2 (5 คะแนน):** เขียนโปรแกรมเปรียบเทียบ Insertion, Selection, Bubble Sort ในภาษา Python พร้อม Trace สลับ/ขยับแต่ละรอบและจำนวนครั้ง |
+| **01/10/2569** | **ก่อน 12.00 น. (เที่ยง)** | Innovative Technopreneurs | **ส่งไฟล์ดิจิทัลทาง LINE กลุ่มวิชา:** เล่มรายงานฉบับสมบูรณ์ (PDF) และสไลด์นำเสนอ (PDF) |
+| **02/10/2569** | ในคาบเรียน | Innovative Technopreneurs | **ส่งรูปเล่มรายงานฉบับพิมพ์ Hard Copy ทุกกลุ่ม + พรีเซนต์กลุ่ม 1-9** |
+| **09/10/2569** | ในคาบเรียน | Innovative Technopreneurs | **การนำเสนอผลงานรอบที่ 2 (กลุ่ม 10-18)** |
+| **09/10/2569** | สิ้นสุดคาบเรียน | ทุกวิชา | **วันสุดท้ายของการเรียนการสอนประจำภาคเรียนที่ 1/2569** |
+| **12-16/10/2569** | ทั้งสัปดาห์ | ทุกวิชา | **วันหยุดราชการกรณีพิเศษ (งดการเรียนการสอนและงดสอบ):** ประเทศไทยเป็นเจ้าภาพจัดประชุมธนาคารโลก & IMF ณ ศูนย์ฯ สิริกิติ์ |
+| **19/10 - 01/11/2569**| 2 สัปดาห์เต็ม | ทุกวิชา | **ช่วงเวลาสอบปลายภาค (Final Examination Period):** มีการจัดสอบวันเสาร์-อาทิตย์ด้วย |
 
 ---
 
-## 🎯 คลังจุดเน้นย้ำและแนวข้อสอบรั่ว (Master Exam Secrets & Leaks)
+## 🎯 คลังจุดเน้นย้ำและแนวข้อสอบรั่วฉบับอัปเดต (Master Exam Secrets & Leaks)
 
-### 1. วิชา Data Structures and Algorithms
-1. **ข้อสอบข้อใหญ่ข้อที่ 2 (Complete Binary Tree):**
-   - คำถาม: *"How many minimum/maximum number of nodes of complete binary tree at the height 10?"*
-   - สูตรอย่างน้อย: $2^H = 2^{10} = \mathbf{1,024 \text{ โหนด}}$
-   - สูตรอย่างมาก: $2^{H+1} - 1 = 2^{11} - 1 = \mathbf{2,047 \text{ โหนด}}$
-   - **⚠️ กฎสำคัญ:** ห้ามตอบติดรูปเลขยกกำลัง ต้องตอบ 1024 และ 2047 เท่านั้น ไม่เช่นนั้นได้ 0 คะแนน
-2. **ข้อสอบ Array Representation ของ Binary Heap:**
-   - Root อยู่ที่ Index 1 เสมอ (Index 0 เว้นว่างไว้)
-   - Left Child = $2i$, Right Child = $2i + 1$
-   - Parent = $\lfloor i / 2 \rfloor$ (**ตัดเศษทิ้งเสมอ เช่น โหนด 7 พ่อคือ 3 ไม่ใช่ 4**)
-3. **ข้อสอบไล่โค้ด DeleteMin ปลายภาค:**
-   - ในข้อสอบจะให้ทำ **DeleteMin ติดต่อกัน 3 รอบ** แล้วเขียนสถานะของ Array สุดท้ายลงในตารางช่องสี่เหลี่ยมที่อาจารย์เตรียมไว้ให้
-4. **ข้อสอบตารางแฮช (Hashing):**
-   - ให้ตารางแฮชเปล่ามา พร้อมฟังก์ชัน $h_i(x) = (\text{hash}(x) + f(i)) \pmod{\text{Table\_Size}}$ ให้นำค่ามาแฮชและแก้ปัญหาการชนลงตาราง
-5. **🔥 ข้อสอบบทที่ 9 Sorting Algorithms (การเรียงลำดับ):**
-   - **กฎเหล็กข้อสอบ:** อาจารย์เน้นย้ำว่า **ห้ามตอบแค่อะเรย์ผลลัพธ์สุดท้ายเด็ดขาด** เพราะเด็กประถมก็เรียงได้ ข้อสอบจะไม่ให้คะแนน!
-   - **Insertion Sort:** โจทย์จะถามเจาะจงเฉพาะรอบ เช่น "After $p = 3$", ค่าตัวแปร `temp`, การเปรียบเทียบย้อนไปทางซ้าย, จำนวน **Position Move** แต่ละรอบ และผลรวม Position Move ทั้งหมด (Worst Case ใช้สูตรอนุกรม $\frac{N(N-1)}{2}$ เช่น 6 ตัวตอบ 15, 8 ตัวตอบ 28, 10 ตัวตอบ 45)
-   - **Selection Sort & range():** กับดักข้อสอบเรื่อง `range(0)` ไม่ใช่ `None` และไม่ใช่ `[0]` แต่เป็น Empty Sequence ที่ไม่จองหน่วยความจำเก็บตัวเลข ต่างกับ `[]`
-   - **Bubble Sort & Inversion Shortcut:** การคำนวณ Total Swaps ทั้งหมดตั้งแต่เริ่มจนจบ จะเท่ากับ **จำนวน Inversion ทั้งหมดในอาร์เรย์เริ่มต้น** (นับจำนวนตัวเลขทางขวามือที่น้อยกว่าตัวมันเอง แล้วนำมารวมกัน เช่น อาร์เรย์ในใบงานตอบ 14 ครั้งทันทีโดยไม่ต้องไล่ลูป)
+### 1. Data Structures & Algorithms (ดร.ประดิษฐ์ พิทักษ์เสถียรกุล)
+1. **ข้อสอบ Complete Graph คำนวณเส้น:** $E = \frac{V(V-1)}{2}$ หากโจทย์ถาม $V = 10$ **ต้องตอบจำนวนเต็ม 45 เท่านั้น! ห้ามตอบติดสูตร** (ตอบติดสูตรได้ 0 คะแนน)
+2. **ข้อสอบการเขียน Path:** จงเขียน Path จาก $A$ ไปยัง $C$ **ต้องตอบ `$A, B, C$` หรือ `(A, B, C)` คั่นด้วยจุลภาคเท่านั้น ห้ามตอบเป็นลูกศร `$A \rightarrow B \rightarrow C$` เด็ดขาด (ได้ 0 คะแนนทันที)**
+3. **ข้อสอบหน่วยของความยาว Path:** ตอบเป็นจำนวน **"เส้น" (Edges)** ไม่ใช่หน่วยวัดความยาวไม้บรรทัด
+4. **ข้อสอบคำถามบน Null Graph ($V=\{\}, E=\{\}$):** ถาม Path จาก $A$ ไป $C$ ให้ตอบว่า **"ไม่มี Path จาก $A$ ไป $C$ เพราะไม่มีโหนด $A$ และ $C$ อยู่ในกราฟ"**
+5. **ข้อสอบคำนวณ Memory Waste ของ Adjacency Matrix:**
+   - กราฟ 7 จุด 12 เส้น ขนาด $7 \times 7 = 49$ ช่อง
+   - ช่องเลข 1 คิดเป็น: $\frac{12 \times 100}{49} = \mathbf{24.48\%}$
+   - ช่องเลข 0 (สูญเปล่า): $\frac{37 \times 100}{49} = \mathbf{75.51\%}$
+6. **ข้อสอบเปรียบเทียบ Matrix vs List (10 Vertices, 20 Edges):**
+   - Adjacency Matrix ใช้: $|V|^2 = 10^2 = \mathbf{100\text{ ช่อง}}$
+   - Adjacency List ใช้: $|E| + |V| = 20 + 10 = \mathbf{30\text{ ช่อง}}$ (ประหยัดกว่า 70%)
 
-### 2. วิชา Database System
-1. **คุณสมบัติ ACID Properties:** ต้องจำและอธิบายได้ครบทั้ง 4 ตัว (Atomicity, Consistency, Isolation, Durability)
-2. **ตาราง Lock Compatibility Matrix:**
-   - Shared Lock (S) vs Exclusive Lock (X)
-   - **มีเพียงกรณีเดียวที่อนุญาตคือ (S, S) = Yes** อีก 3 กรณีที่เหลือคือ (S, X), (X, S), (X, X) ต้องตอบ **No** ทั้งหมด
-3. **การกู้คืนหลังเซิร์ฟเวอร์ล่ม (Crash Recovery):**
-   - ตรวจสอบจาก Log File: รายการที่มี `COMMIT` แล้ว $\rightarrow$ ให้สั่ง **REDO**
-   - รายการที่มี `START` แต่ยังไม่มี `COMMIT` $\rightarrow$ ให้สั่ง **UNDO / ROLLBACK**
-4. **การเปรียบเทียบ RDBMS vs NoSQL & Big Data:**
-   - ข้อจำกัด RDBMS: Join are expensive, Hard to scale-out horizontally, Impedance mismatch
-   - โมเดล NoSQL 4 ชนิด: Key-Value (DynamoDB), Column Family (Cassandra เขียนเร็ว 0.12ms ด้วย Append-only), Graph (Neo4j เหมาะกับ Social Network), Document (MongoDB เก็บ JSON/BSON)
-   - ทฤษฎีบท **CAP Theorem:** ระบบกระจายศูนย์เลือกได้มากสุด 2 จาก 3 (RDBMS = CA, MongoDB = CP, Cassandra = AP)
-5. **ข้อสอบปลายภาค 40 คะแนนเต็ม (สอบ 3 ชั่วโมงเต็ม):** ห้ามออกจากห้องสอบก่อน 1 ชั่วโมงแรก ต้องบริหารเวลาทำข้อสอบให้ทัน
+### 2. Database System (ดร.สวาท)
+1. **จุดตาย ERROR 1074:** คำสั่ง `ALTER TABLE Title MODIFY COLUMN TitleDescription CHAR(500);` ล้มเหลวเพราะ `CHAR` รองรับความยาวสูงสุดเพียง **255 ตัวอักษร** ต้องแก้ไขเป็น `VARCHAR(500)` หรือ `TEXT`
+2. **Character Set utf8mb4:** ต้องระบุ `CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci` เพื่อรองรับภาษาไทยและ Emoji ให้ครบ 4 ไบต์ ป้องกันข้อความกลายเป็น `?`
+3. **Referential Integrity Constraints:** `ON DELETE CASCADE` และ `ON UPDATE CASCADE` เพื่อกำจัดปัญหา Orphan Records ในตารางลูก
 
-### 3. วิชา Software Engineering
-1. **การแยกแยะระหว่าง `<<include>>` กับ `<<extend>>`:**
-   - ถ้าฟังก์ชันย่อยต้องทำ **ทุกครั้ง ขาดไม่ได้** $\rightarrow$ ใช้ **`<<include>>`** (ลูกศรชี้จาก Base ไปหาตัวช่วย) เช่น `Withdraw` $\rightarrow$ `<<include>>` $\rightarrow$ `Login`
-   - ถ้าฟังก์ชันย่อยเกิด **เฉพาะบางกรณี เป็นทางเลือก** $\rightarrow$ ใช้ **`<<extend>>`** (ลูกศรชี้จากตัวเสริมกลับมาหา Base) เช่น `Login` $\leftarrow$ `<<extend>>` $\leftarrow$ `Request OTP` หรือ `Change Password`
-2. **กฎการวาด Use Case Diagram:**
-   - Use Case ต้องเป็น **วงรี** เท่านั้น ตั้งชื่อด้วย **Verb + Object** (ห้ามใส่ Action ละเอียดระดับปุ่ม เช่น "Click button")
-   - Actor ต้องเป็นรูป **Stickman** แทน **Role** (ห้ามใส่ชื่อบุคคลเฉพาะเจาะจง และห้ามใส่ Database หรือ Server ภายในเป็น Actor)
-   - Actor ต้องอยู่นอกกรอบ System Boundary เสมอ และ Use Case ต้องอยู่ในกรอบเสมอ
+### 3. Software Engineering
+1. **ข้อสอบ Final ออกแน่นอน 1 ข้อใหญ่:** โจทย์ Case Study ยาว ให้ระบุ Actors, Use Cases, วาด Use Case Diagram สมบูรณ์ และวาด Activity Diagram ขยายการทำงาน
+2. **สัญลักษณ์ UML แม่นยำ:**
+   - Generalization: สามเหลี่ยมโปร่ง $\triangle$ ชี้เข้าหาคลาสแม่ (`Student` / `Staff` $\rightarrow$ `Member`)
+   - `<<include>>`: ชี้จาก Use Case หลัก $\rightarrow$ Use Case บังคับ
+   - `<<extend>>`: ชี้จาก Use Case เงื่อนไข $\rightarrow$ Use Case หลัก
+3. **Activity Diagram:**
+   - วาดในมุมมองของ **ระบบ (System)** ไม่ใช่มุมมอง User
+   - รองรับกิจกรรมคู่ขนานด้วย **Fork & Join** แถบหนาสีดำ
+   - ควบคุมทางเลือกด้วย **Decision Node** สี่เหลี่ยมข้าวหลามตัดพร้อม Guard Condition `[...]`
 
-### 4. วิชา Computer Graphics & Design (Adobe Illustrator)
-1. **ข้อสอบปฏิบัติ 4 ข้อ ข้อละ 75 คะแนน (รวม 300 คะแนน):**
-   - ข้อ 1: 3D Effect เลือกระหว่าง **Revolve** (หมุนแกนทรงสมมาตร) หรือ **Extrude & Bevel** (ดึงความหนา)
-   - ข้อ 2: 3D Effect ผสานการใช้ **Offset Path** ขยายขอบ และ **Pathfinder** (Unite/Minus)
-   - ข้อ 3: Image Path ตาม **Workshop รถ Tesla สีแดง**
-   - ข้อ 4: **Pen Tool** ดราฟท์เส้นภาพการ์ตูนและลงสี (ใช้เวลาเยอะที่สุด)
-2. **การเข้าห้องสอบ:** ห้ามสายเกิน 09.10 น. อินเทอร์เน็ตเปิดให้ 10 นาทีแรกสำหรับยืนยันตัวตนเท่านั้น หลังจากนั้นกรรมการตัดเน็ตทันที
+### 4. Computer Networks & Internet (ดร.วรลักษณ์)
+1. **การคำนวณ CRC:** ตั้งหารแบบ Modulo-2 XOR ไม่มีการยืมบิต ตัวหารความยาว $L$ บิต ต้องเติมศูนย์ต่อท้ายข้อมูล $L-1$ บิต เศษที่ได้คือ CRC
+2. **การแปลง Polynomial:** พจน์ที่ไม่มีสัมประสิทธิ์ต้องแทนด้วยบิต `0` เช่น $x^3 + 1 \rightarrow 1 0 0 1$
+3. **Multiple Access Protocols:** Slotted ALOHA มีประสิทธิภาพสูงสุดเพียง **37% ($1/e$)**, CSMA/CD ใช้บนสายแลน Ethernet (ฟังก่อนส่ง + ตรวจจับการชนขณะส่ง)
+4. **Bellman-Ford Distance Vector:** $d_x(y) = \min_v \{ c(x,v) + d_v(y) \}$, จุดอ่อนคือปัญหา Count-to-Infinity แก้ด้วย Split Horizon

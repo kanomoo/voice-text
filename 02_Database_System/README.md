@@ -20,6 +20,8 @@
 | [`20260908_143913.aac`](file:///C:/Project/Voice/Success/20260908_143913.aac) | 08/09/2569 14:39 น. | 17 นาที 15 วินาที | **Part 3 (สอบเก็บคะแนน Pop Quiz):** อาจารย์สั่งสอบเก็บคะแนนกระทันหัน 2 ข้อ ให้เวลาข้อละ 5 นาที เขียนลงกระดาษ A4 แบ่งครึ่งหน้า-หลัง (ข้อ 1 ACID, ข้อ 2 Lock Matrix & 5 Transactions Crash Recovery) |
 | [`-.aac`](file:///C:/Project/Voice/Success/-.aac) | 08/09/2569 14:39 น. | 17 นาที 15 วินาที | *ไฟล์สำเนา (Duplicate)* ขนาดและเนื้อหาตรงกับ `20260908_143913.aac` ทุกประการ |
 | [`20260915_130022.aac`](file:///C:/Project/Voice/Success/20260915_130022.aac) | 15/09/2569 13:00 น. | 67 นาที 51 วินาที | **Part 4 (การบรรยาย NoSQL & CAP Theorem):** ข้อจำกัดของ RDBMS บนระบบกระจาย (Join expensive, Hard to scale, Impedance mismatch), ลักษณะ Big Data (5 Vs), โมเดล NoSQL 4 ชนิด (Key-Value, Column Family, Graph, Document-based), CAP Theorem (Brewer's Theorem: CA vs CP vs AP), สั่งส่งงาน ER Diagram ใน Classroom, ประกาศเรียน Lab 2 สัปดาห์ และแนวข้อสอบปลายภาค 40 คะแนน |
+| [`20260922_131058.aac`](file:///C:/Project/Voice/Success/20260922_131058.aac) | 22/09/2569 13:10 น. | 81 นาที 15 วินาที | **Part 5 (ปฏิบัติการแล็บ DDL & MariaDB CLI):** การติดตั้งและเปิด XAMPP MariaDB CLI, การตั้ง Character Set `utf8mb4_unicode_ci`, สร้างตาราง Customer/Order/Product, การกำหนด Primary Key, Foreign Key และ Constraint `ON DELETE CASCADE` |
+| [`20260922_150154.aac`](file:///C:/Project/Voice/Success/20260922_150154.aac) | 22/09/2569 15:01 น. | 45 นาที 48 วินาที | **Part 6 (แล็บ DML & จุดตาย ERROR 1074):** ปัญหาคำสั่ง `ALTER TABLE Title MODIFY COLUMN TitleDescription CHAR(500);` ล้มเหลวเพราะ `CHAR` รองรับความยาวสูงสุดเพียง 255 ต้องแก้เป็น `VARCHAR(500)` พร้อมเทคนิคการสืบค้น `SELECT` และแก้ปัญหาภาษาไทยกลายเป็น `?` |
 
 ---
 
@@ -84,3 +86,8 @@
 - [**คำถอดความ 08/09/2569 Part 3 (`20260908_143913.txt`)**](file:///C:/Project/Voice/02_Database_System/20260908_143913.txt)
 - [**คำถอดความ 15/09/2569 Part 4 (`20260915_130022.txt`)**](file:///C:/Project/Voice/02_Database_System/20260915_130022.txt)
 - [**บทวิเคราะห์ NoSQL, Big Data & CAP Theorem (`Transcript_20260915_130022_NoSQL_BigData_CAP.md`)**](file:///C:/Project/Voice/02_Database_System/Transcript_20260915_130022_NoSQL_BigData_CAP.md)
+- [**คำถอดความ 22/09/2569 Part 5-6 (`20260922_131058.txt`)**](file:///C:/Project/Voice/02_Database_System/20260922_131058.txt)
+- [**บทวิเคราะห์เจาะลึก Lab DDL/DML, Constraints & จุดตาย ERROR 1074 (`Transcript_20260922_DB_Lab_DDL_DML_ERROR1074.md`)**](file:///C:/Project/Voice/02_Database_System/Transcript_20260922_DB_Lab_DDL_DML_ERROR1074.md)
+- [**ภาพหน้าจอ phpMyAdmin โครงสร้างตาราง (`IMG_20260922_124841_660@1996423590.jpg`)**](file:///C:/Project/Voice/02_Database_System/IMG_20260922_124841_660@1996423590.jpg)
+- [**ภาพหน้าจอ ERROR 1074 CHAR(500) limit (`IMG_20260922_142452_298@-1416416793.jpg`)**](file:///C:/Project/Voice/02_Database_System/IMG_20260922_142452_298@-1416416793.jpg)
+- [**ภาพหน้าจอคำสั่ง DDL ALTER TABLE (`IMG_20260922_142503_490@2024331400.jpg`)**](file:///C:/Project/Voice/02_Database_System/IMG_20260922_142503_490@2024331400.jpg)

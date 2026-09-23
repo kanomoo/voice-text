@@ -3,7 +3,7 @@
 **หมวดหมู่วิชา:** วท.บ. วิทยาการคอมพิวเตอร์ / เทคโนโลยีสารสนเทศ  
 **ผู้บรรยาย:** อาจารย์ประจำวิชา (ดร.ประดิษฐ์ พิทักษ์เสถียรกุล)  
 **โฟลเดอร์ปฏิบัติการ:** `C:\Project\Voice\03_Data_Structures_and_Algorithms\`  
-**คลังภาพประกอบการสอน:** `C:\Project\Voice\DSA-pic\` (สไลด์, เอกสาร Word, โค้ด VS Code และภาพกระดานรวม 87 ภาพ)  
+**คลังภาพประกอบการสอน:** `C:\Project\Voice\DSA-pic\` (สไลด์, เอกสาร Word, โค้ด VS Code และภาพกระดานรวม 106 ภาพ)  
 
 ---
 
@@ -24,6 +24,9 @@
 5. 📘 [Transcript_20260916_Comparison_Sorting_Insertion_Selection_Bubble_Exam_Trace.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260916_Comparison_Sorting_Insertion_Selection_Bubble_Exam_Trace.md)  
    - **บทที่ 9: การเรียงลำดับข้อมูลแบบเปรียบเทียบ (Comparison-based Sorting: Insertion, Selection, Bubble Sort) และเฉลยข้อสอบใบงาน**
    - วิเคราะห์เจาะลึก: กลไก `temp` และการเปรียบเทียบถอยหลังของ Insertion Sort, การนับ Position Move และสูตร Best/Worst Case ($\frac{N(N-1)}{2}$), การแบ่ง Sorted/Unsorted Part ของ Selection Sort, โครงสร้างหน่วยความจำ `range(0)` vs `[]`, การลอยตัวของ Bubble Sort, สูตรลัด Inversion Counting หา Total Swaps, และเฉลยใบงาน Bubble Sort อาร์เรย์ `[64, 34, 25, 12, 22, 11, 90]` (6 passes, 14 swaps, Pass 1 trace)
+6. 📘 [Transcript_20260923_Graph_Theory_Representations_Exam_Leaks.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260923_Graph_Theory_Representations_Exam_Leaks.md)  
+   - **บทที่ 10: ทฤษฎีกราฟ, โครงสร้าง Adjacency Matrix/List และเจาะลึกแนวข้อสอบปลายภาค 45 เส้น (Graph Theory Exam Leaks & Shortcuts)**
+   - วิเคราะห์เจาะลึก: ประกาศ Drop เกือบ 100 คน, งดเรียน/สอบประชุม IMF & World Bank 12-16 ต.ค. เลื่อนสอบ Final 19 ต.ค. - 1 พ.ย. 69 (35%), นิยาม Adjacent/Path, กฎเหล็กเขียน Path ห้ามใส่ลูกศร (0 คะแนน), ข้อสอบ Complete Graph 10 Vertices ตอบจำนวนเต็ม 45 เส้น, จุดหลอก Null Graph, ตาราง Matrix 7x7 เปลืองพื้นที่ 75.51% vs List 19 ช่อง (ประหยัด 61.22%), และข้อสอบเปรียบเทียบ 10 Vertices 20 Edges (Matrix 100 vs List 30 ช่อง ประหยัด 70%)
 
 ---
 
@@ -45,12 +48,13 @@
 | `20260909_103704.aac` | 09/09/2569 10:37 น. | 81 นาที 39 วินาที | **ข้อสอบปลายภาค!** ไล่โค้ด `deleteMin`, Percolate Down, การบ้าน และเผยสอบ DeleteMin 3 ครั้ง |
 | `20260916_092007.aac` | 16/09/2569 09:20 น. | 44 นาที 43 วินาที | **Sorting Part 1:** สัญนิยมการเรียง, เจาะลึก Insertion Sort และตาราง Position Move, 3 Cases |
 | `20260916_102037.aac` | 16/09/2569 10:20 น. | 68 นาที 45 วินาที | **Sorting Part 2:** Selection Sort, range(0) ใน Python, Bubble Sort, สูตรลัด Inversion, ใบงานแบบฝึกหัดท้ายคาบ |
+| `20260923_091645.aac` | 23/09/2569 09:16 น. | 147 นาที 52 วินาที| **🔥 บทที่ 10 Graph Theory:** 14 ภาพกระดาน, ข้อสอบรั่ว Complete Graph 45 เส้น, Adjacency Matrix สิ้นเปลือง 75.51% vs List 19 ช่อง, จุดลวง Path ห้ามใส่ลูกศร (0 คะแนน), โจทย์ลวง Null Graph |
 
 ---
 
 ## 🖼️ คลังภาพและสารบัญรูปภาพบรรยาย (`DSA-pic/` Visual Catalog)
 
-โฟลเดอร์ [DSA-pic/](file:///C:/Project/Voice/DSA-pic/) รวบรวมภาพถ่ายหน้าจอโปรเจกเตอร์ สไลด์บรรยาย และกระดานดำรวม 87 ภาพ เชื่อมโยงกับเนื้อหาการเรียนดังนี้:
+โฟลเดอร์ [DSA-pic/](file:///C:/Project/Voice/DSA-pic/) รวบรวมภาพถ่ายหน้าจอโปรเจกเตอร์ สไลด์บรรยาย และกระดานดำรวม 106 ภาพ เชื่อมโยงกับเนื้อหาการเรียนดังนี้:
 
 ### กลุ่มที่ 1: คาบเรียนวันที่ 26 สิงหาคม 2569 (26 ภาพ)
 - **LinkedList Implementation & Memory Layout (09:17 - 10:25 น.):**
@@ -113,3 +117,23 @@
   - [IMG_20260916_095816_275@-1897800400.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260916_095816_275@-1897800400.jpg): บันทึกกระดานโจทย์ Worst Case 64, 51, 34, 32, 21, 8 คำนวณ Position Move รวม 15 ครั้ง
 - **ใบงานแบบฝึกหัดในห้องเรียน (In-Class Assignment / Quiz) (11:27 น.):**
   - [IMG_20260916_112712_580@-1614993214.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260916_112712_580@-1614993214.jpg): ใบงานจริงวิชา DSA เรื่องการไล่ Bubble Sort บนอาร์เรย์ `[64, 34, 25, 12, 22, 11, 90]` (Passes=6, Total Swaps=14, Step 4 trace, Pass 1 result, Swaps after pass 1 = 5) ส่งก่อนเที่ยงตรง
+
+---
+
+### กลุ่มที่ 6: คาบเรียนวันที่ 23 กันยายน 2569 (14 ภาพ)
+- **ทฤษฎีกราฟ, นิยาม Path, และจุดลวงข้อสอบ 0 คะแนน (10:11 - 10:39 น.):**
+  - [IMG_20260923_101115_542@-1909020087.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_101115_542@-1909020087.jpg): กราฟ 4 จุดยอด $A,B,C,D$ ตัวอย่าง Path Cycle $A,B,C,D,A$ พร้อมกฎเหล็กห้ามใส่ลูกศรเด็ดขาด (ได้ 0 ทันที)
+  - [IMG_20260923_102340_253@440933343.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_102340_253@440933343.jpg): บันทึกกระดาน Disconnected Graph ที่มีโหนดไม่มี Path เชื่อมต่อ
+  - [IMG_20260923_103027_887@-883680469.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_103027_887@-883680469.jpg): การเดินเชื่อมต่อทางอ้อมผ่านโหนดตัวกลาง
+  - [IMG_20260923_103124_138@681950856.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_103124_138@681950856.jpg): กราฟ $V=\{A,B,C,D\}, E=\{(A,B),(B,C)\}$ ไม่มีเส้นตรง $A-C$ แต่มี Path $A, B, C$
+  - [IMG_20260923_103349_551@-151508216.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_103349_551@-151508216.jpg): กราฟย่อยที่มี Isolated Vertices
+  - [IMG_20260923_103455_240@-1902186239.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_103455_240@-1902186239.jpg): กราฟโหนดเดี่ยว $V=\{D\}, E=\{\}$ พิสูจน์ว่าเป็นกราฟตามนิยาม
+  - [IMG_20260923_103736_910@1714137841.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_103736_910@1714137841.jpg): กราฟว่าง $V=\{\}, E=\{\}$ (Null Graph) จุดลวงยอดฮิตในข้อสอบ
+  - [IMG_20260923_103822_425@-1355721106.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_103822_425@-1355721106.jpg): บันทึกกระดานเฉลยข้อสอบ Null Graph ถาม Path $A$ ไป $C$ ให้ตอบว่า "ไม่มี Path เพราะไม่มีโหนด $A$ และ $C$"
+  - [IMG_20260923_103945_248@-2093106769.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_103945_248@-2093106769.jpg): สรุปนิยามและข้อควรระวังเรื่อง Null Graph
+- **ข้อสอบ Complete Graph 45 เส้น และการคำนวณ Memory Waste (10:48 - 11:38 น.):**
+  - [IMG_20260923_104814_788@-1807977296.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_104814_788@-1807977296.jpg): **ข้อสอบปลายภาค!** คำนวณเส้น Complete Graph $V=10 \implies E = \frac{10 \times 9}{2} = 45$ เส้น (ต้องตอบเลขจำนวนเต็ม 45 เท่านั้น)
+  - [IMG_20260923_110059_773@1901326602.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_110059_773@1901326602.jpg): ตาราง Adjacency Matrix ขนาด $7 \times 7 = 49$ ช่อง พร้อมข้อความชี้จุดสูญเปล่าหน่วยความจำ
+  - [IMG_20260923_110522_696@1035849451.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_110522_696@1035849451.jpg): **ข้อสอบภาษาอังกฤษ!** คำนวณ % Memory Waste: ช่องเลข 1 คิดเป็น 24.48%, ช่องเลข 0 สูญเปล่า 75.51%
+  - [IMG_20260923_113450_494@173595678.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_113450_494@173595678.jpg): **ข้อสอบปลายภาค!** สไลด์เปรียบเทียบขนาด Adjacency List สำหรับกราฟ 10 Vertices 20 Edges ใช้ $10 + 20 = 30$ ช่อง
+  - [IMG_20260923_113807_477@-1558442029.jpg](file:///C:/Project/Voice/DSA-pic/IMG_20260923_113807_477@-1558442029.jpg): **ข้อสอบปลายภาค!** Adjacency Matrix สำหรับกราฟ 10 Vertices ใช้ $10^2 = 100$ ช่อง สรุปว่า List ประหยัดหน่วยความจำกว่าถึง 70%
