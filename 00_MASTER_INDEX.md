@@ -1,7 +1,7 @@
 # สารบัญและรายงานวิเคราะห์ไฟล์เสียงฉบับสมบูรณ์ (Master Voice Index & Intelligence Report)
 **ตำแหน่งไดเรกทอรี:** `C:\Project\Voice\`  
-**วันที่ประมวลผลล่าสุด:** 25 กันยายน 2569  
-**จำนวนไฟล์เสียงทั้งหมด:** 41 รายการไฟล์เสียง (.aac) + โฟลเดอร์ภาพประกอบ (`DSA-pic/` รวม 106 ภาพ + ภาพแล็บฐานข้อมูลใน `02_Database_System/` 3 ภาพ)  
+**วันที่ประมวลผลล่าสุด:** 7 ตุลาคม 2569  
+**จำนวนไฟล์เสียงทั้งหมด:** 44 รายการไฟล์เสียง (.aac / .m4a) + โฟลเดอร์ภาพประกอบ (`DSA-pic/` รวม 106 ภาพ + ภาพแล็บฐานข้อมูลใน `02_Database_System/` 3 ภาพ)  
 
 ---
 
@@ -35,12 +35,14 @@ C:\Project\Voice\
 │   ├── Transcript_20260915_130022_NoSQL_BigData_CAP.md          <-- บทวิเคราะห์ Part 4: NoSQL, Big Data, CAP Theorem
 │   ├── Transcript_20260922_DB_Lab_DDL_DML_ERROR1074.md           <-- 🔥 บทวิเคราะห์เจาะลึกแล็บ DDL/DML, Constraints, ERROR 1074 CHAR(500)
 │   ├── Transcript_20260929_DB_Lab_FK_Constraints_Cascade_Restrict_Exam_Presentation.md <-- 🔥 บทวิเคราะห์แล็บ 2: CASCADE vs RESTRICT, Normalization, การบ้าน SQL, พรีเซนต์ห้อง 307
+│   ├── Transcript_20261006_DB_Final_Exam_Rules_Negative_Marking_ER_Presentation.md <-- 🔥 บทวิเคราะห์กฎสอบ Final ปรนัย 80 ข้อ Open Book, กฎหักคะแนนติดลบ, สรุปพรีเซนต์ Total/Partial
 │   ├── 20260908_130406.txt                                       <-- [ถอดความละเอียดทุกคำพูด] Master/Transaction File
 │   ├── 20260908_131052.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บรรยายหลัก 67 นาที: ACID
 │   ├── 20260908_143913.txt                                       <-- [ถอดความละเอียดทุกคำพูด] ควิซในห้อง A4 2 ข้อ
 │   ├── 20260915_130022.txt                                       <-- [ถอดความละเอียดทุกคำพูด] NoSQL, CAP Theorem
 │   ├── 20260922_131058.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 ปฏิบัติการแล็บ DDL, XAMPP CLI, utf8mb4, ERROR 1074
 │   ├── 20260929_142500.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 แล็บ 2: Foreign Key Constraints, ผลสุ่มกงล้อพรีเซนต์ห้อง 307
+│   ├── 20261006_161408.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 กฎสอบ Final ปรนัย 80 ข้อ, Negative Marking, ดินสอ 2B, ส่ง ER 2 ช่อง
 │   ├── IMG_20260922_124841_660@1996423590.jpg                    <-- โครงสร้างตารางใน phpMyAdmin
 │   ├── IMG_20260922_142452_298@-1416416793.jpg                   <-- ภาพหน้าจอ ERROR 1074 CHAR(500) limit
 │   └── IMG_20260922_142503_490@2024331400.jpg                    <-- ภาพหน้าจอคำสั่ง DDL ALTER TABLE
@@ -76,8 +78,10 @@ C:\Project\Voice\
 │   ├── README.md                                                 <-- สรุปวิชา, Use Case & Activity Diagram, include vs extend
 │   ├── Transcript_20260915_092638_UseCase_Diagram.md             <-- บทวิเคราะห์ Use Case Diagram, System Boundary
 │   ├── Transcript_20260922_SE_UseCase_Activity_Diagram_Exam_Secrets.md <-- 🔥 บทวิเคราะห์ Case Study ระบบยืมคืนอุปกรณ์, Activity Diagram, ข้อสอบ Final
+│   ├── Transcript_20261006_SE_Final_Exam_5_Items_Leak_Scrum_Testing_Complexity.md <-- 🔥 บทวิเคราะห์ชี้แจงข้อสอบ Final 5 ข้อใหญ่ 100% EXPLICIT LEAKS, EP/BVA, Cyclomatic, Burn-down
 │   ├── SE20260915_092638.txt                                     <-- [ถอดความละเอียดทุกคำพูด] บรรยาย Use Case Diagram
-│   └── 20260922_093313.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 Case Study ยืมคืนอุปกรณ์, Activity Diagram สัญลักษณ์ครบ
+│   ├── 20260922_093313.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 Case Study ยืมคืนอุปกรณ์, Activity Diagram สัญลักษณ์ครบ
+│   └── 20261006_094018.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 ข้อสอบ Final 5 ข้อใหญ่, Open Book, Dictionary, เฉลยการบ้านยืมคืนอุปกรณ์แล็บ
 │
 ├── 08_Computer_Networks_and_Internet\                            <-- วิชาเครือข่ายคอมพิวเตอร์และอินเทอร์เน็ต (Network & Link Layer)
 │   ├── README.md                                                 <-- สรุปวิชา, Distance Vector, BGP, CRC, MAC Protocols
@@ -86,7 +90,7 @@ C:\Project\Voice\
 │   ├── 20260914_132959.txt                                       <-- [ถอดความละเอียดทุกคำพูด] บทที่ 5: Distance Vector & Hierarchical Routing
 │   └── 20260921_135415.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 บทที่ 6: Link Layer, การตั้งหาร CRC, TDMA, CSMA/CD, สั่งการบ้าน
 │
-└── Success\                                                      <-- แหล่งจัดเก็บไฟล์เสียงต้นฉบับทั้ง 42 ไฟล์ที่ประมวลผลเสร็จแล้ว (.aac / .m4a)
+└── Success\                                                      <-- แหล่งจัดเก็บไฟล์เสียงต้นฉบับทั้ง 44 ไฟล์ที่ประมวลผลเสร็จแล้ว (.aac / .m4a)
 ```
 
 ---
@@ -137,6 +141,8 @@ C:\Project\Voice\
 | 40 | `20260925_093530.aac` | 25/09/2569 | 79m 33s | `01_Innovative_Technopreneurs` | **🔥 บทที่ 10 Part 1:** โครงสร้างองค์กร, ภาษีซ้ำซ้อน (Double Taxation), 5 รูปแบบธุรกิจ, CNV 4 โมเดล, Intrapreneurship, 15% Rule ของ 3M, สถาปัตยกรรมทีม (Founders, BOD, Advisory), ลิขสิทธิ์ vs สิทธิบัตร |
 | 41 | `20260925_105917.aac` | 25/09/2569 | 11m 04s | `01_Innovative_Technopreneurs` | **🔥 บทที่ 10 Part 2:** เครื่องหมายรับรอง (อย./มอก./ฮาลาล), เครื่องหมายร่วม (SCG), ความลับทางการค้า (KFC/Coke), Reverse Engineering, การบังคับใช้สิทธิ์ (CL สิทธิบัตรยา), การสิ้นสิทธิ & การนำเข้าซ้อน |
 | 42 | `database 29_9_2569 14.25.m4a` | 29/09/2569 | 68m 16s | `02_Database_System` | **🔥 DB Lab Week 2 & พรีเซนต์:** Foreign Key CASCADE vs RESTRICT, การบ้าน SQL (P.40-P.41+ เขียนมือ), นัดตรวจ ER พรุ่งนี้ 10:30 น., ผลสุ่มกงล้อพรีเซนต์โครงงานห้อง 307 และเลื่อนสอบปลายภาค |
+| 43 | `20261006_094018.aac` | 06/10/2569 | 45m 59s | `07_Software_Engineering` | **🔥 ชี้แจงข้อสอบปลายภาค 5 ข้อใหญ่ 100% EXPLICIT LEAKS:** Open Book + Dictionary, Case Study Actor & Role, Use Case Diagram, Activity Diagram, Software Testing (EP & BVA), Cyclomatic Complexity ($V(G)$ 3 วิธี) & Independent Paths, Agile/Scrum Roles, Burn-down Chart, เฉลยการบ้านระบบแล็บ และเกณฑ์ตัดเกรดอิงเกณฑ์ (A=80) |
+| 44 | `20261006_161408.aac` | 06/10/2569 | 7m 34s | `02_Database_System` | **🔥 กฎเหล็กสอบ Final & Negative Marking:** ข้อสอบปรนัย 80 ข้อ (40 คะแนน), Open Book, กฎติดลบ: ถูก 2 ข้อได้ 1 แต้ม / ผิด 2 ข้อหัก 1 แต้ม, ศัพท์เทคนิคอังกฤษ, เตรียมดินสอ 2B ฝน, ส่ง ER Diagram 2 ช่องใน Classroom (หลังมิดเทอม vs Final ฉบับแก้), เทคนิคพรีเซนต์ Total/Partial vs Cardinality |
 
 ---
 
@@ -175,24 +181,31 @@ C:\Project\Voice\
    - Adjacency List ใช้: $|E| + |V| = 20 + 10 = \mathbf{30\text{ ช่อง}}$ (ประหยัดกว่า 70%)
 
 ### 2. Database System (ดร.สวาท)
-1. **จุดตาย ERROR 1074:** คำสั่ง `ALTER TABLE Title MODIFY COLUMN TitleDescription CHAR(500);` ล้มเหลวเพราะ `CHAR` รองรับความยาวสูงสุดเพียง **255 ตัวอักษร** ต้องแก้ไขเป็น `VARCHAR(500)` หรือ `TEXT`
-2. **Character Set utf8mb4:** ต้องระบุ `CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci` เพื่อรองรับภาษาไทยและ Emoji ให้ครบ 4 ไบต์ ป้องกันข้อความกลายเป็น `?`
-3. **Referential Integrity Constraints:** `ON DELETE CASCADE` และ `ON UPDATE CASCADE` เพื่อกำจัดปัญหา Orphan Records ในตารางลูก
+1. **🔥 กฎเหล็กข้อสอบปลายภาค 80 ข้อ (40 คะแนน) Open Book:**
+   - ข้อสอบเป็น **ปรนัย (Multiple Choice) 80 ข้อ** เก็บ 40 คะแนนเต็ม
+   - **Negative Marking Penalty (กฎติดลบ):** ทำถูก 2 ข้อได้ 1 แต้ม / **ทำผิด 2 ข้อ หัก 1 แต้ม (-0.5 ต่อข้อ)!** หากไม่มั่นใจห้ามเดาสุ่มเด็ดขาด ให้เว้นว่างไว้จะไม่โดนหัก
+   - **Open Book:** นำเอกสาร ตำรา และสรุปเข้าห้องสอบได้ทุกชนิด
+   - **อุปกรณ์บังคับ:** ดินสอ 2B สำหรับฝนกระดาษคำตอบ, ยางลบดินสอ, ปากกา, ลิควิด
+   - **ส่ง ER Diagram ใน Classroom 2 ช่อง:** ช่องหลังมิดเทอม (ไฟล์เดิม) และช่อง Final (ไฟล์ฉบับปรับปรุง)
+2. **จุดตาย ERROR 1074:** คำสั่ง `ALTER TABLE Title MODIFY COLUMN TitleDescription CHAR(500);` ล้มเหลวเพราะ `CHAR` รองรับความยาวสูงสุดเพียง **255 ตัวอักษร** ต้องแก้ไขเป็น `VARCHAR(500)` หรือ `TEXT`
+3. **Character Set utf8mb4:** ต้องระบุ `CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci` เพื่อรองรับภาษาไทยและ Emoji ให้ครบ 4 ไบต์ ป้องกันข้อความกลายเป็น `?`
 4. **ความแตกต่างระหว่าง CASCADE vs RESTRICT:**
    - `CASCADE`: ลบ/อัปเดตตารางแม่แล้วตารางลูกโดนด้วยอัตโนมัติ
-   - `RESTRICT`: ห้ามลบ/อัปเดตตารางแม่เด็ดขาดหากยังมีตารางลูกอ้างอิงอยู่ (`ERROR 1451 (23000)`) หากจะลบต้องเคลียร์ตารางลูกก่อน หรือแถวนั้นต้องไม่มีตารางลูกอ้างอิง
-5. **หลัก Normalization แยกตารางย่อย:** เหตุผลที่ต้องแยก `Title`, `Category`, `Unit` เพราะป้องกันความซ้ำซ้อนและหลีกเลี่ยงการแก้ข้อมูลซ้ำหลายหมื่นแถว (Update Anomaly) โดย `OrderID` ใน `Orders` เป็น PK ห้ามซ้ำ แต่ใน `OrderDetail` เป็น FK สามารถซ้ำได้เพื่อรองรับหลายรายการต่อบิล
+   - `RESTRICT`: ห้ามลบ/อัปเดตตารางแม่เด็ดขาดหากยังมีตารางลูกอ้างอิงอยู่ (`ERROR 1451 (23000)`)
+5. **การนำเสนอ E-R Diagram:** ให้เลือกอธิบายความสัมพันธ์แบบเดียวที่กลุ่มถนัด เช่น **Total / Partial Participation** (ชัดเจนและไม่สับสน) หรือ Cardinality Ratio ห้ามอธิบายปนกันจนขัดแย้ง
 
 ### 3. Software Engineering
-1. **ข้อสอบ Final ออกแน่นอน 1 ข้อใหญ่:** โจทย์ Case Study ยาว ให้ระบุ Actors, Use Cases, วาด Use Case Diagram สมบูรณ์ และวาด Activity Diagram ขยายการทำงาน
-2. **สัญลักษณ์ UML แม่นยำ:**
+1. **🔥 โครงสร้างข้อสอบปลายภาค 5 ข้อใหญ่ 30 คะแนน (100% EXPLICIT LEAKS):**
+   - **Item 1:** Case Study ภาษาอังกฤษ (~10 บรรทัด) $\rightarrow$ Part A: ค้นหา Actor พร้อมระบุ Role (ห้ามตอบเกินช่องที่ล็อกไว้) + Part B: วาด Use Case Diagram ครบทุกความสัมพันธ์
+   - **Item 2:** Case Study มีขั้นตอน 1-2-3 ชัดเจน $\rightarrow$ วาด Activity Diagram ครบทุกสัญลักษณ์ (Start, End, Action, Decision, Fork/Join, Swimlanes)
+   - **Item 3:** Software Testing $\rightarrow$ Part A: Equivalence Partitioning (EP), Part B: Boundary Value Analysis (BVA), Part C: ระบุชื่อและหลักการกระบวนการ
+   - **Item 4:** Software Complexity Metrics $\rightarrow$ โค้ด Python 5 บรรทัด + กราฟ Control Flow Graph (มีให้แล้ว) คำนวณ Cyclomatic Complexity ($V(G)$) 3 วิธี ($E-N+2P$, Regions, Predicates+1) และระบุเส้นทางอิสระ (Independent Paths)
+   - **Item 5:** Agile & Scrum & Burn-down Chart $\rightarrow$ Part A: ระบุหน้าที่บทบาท Product Owner, Scrum Master, Dev Team + Part B: อ่านและวิเคราะห์กราฟ Burn-down Chart
+2. **กฎการสอบและการตัดเกรด:** Open Book นำเอกสารและพจนานุกรมเข้าได้, ตัดเกรดอิงเกณฑ์ (A $\ge$ 80, B+ $\ge$ 75, B $\ge$ 70, C+ $\ge$ 65, C $\ge$ 60, D+ $\ge$ 55, D $\ge$ 50, F < 50)
+3. **สัญลักษณ์ UML แม่นยำ:**
    - Generalization: สามเหลี่ยมโปร่ง $\triangle$ ชี้เข้าหาคลาสแม่ (`Student` / `Staff` $\rightarrow$ `Member`)
-   - `<<include>>`: ชี้จาก Use Case หลัก $\rightarrow$ Use Case บังคับ
-   - `<<extend>>`: ชี้จาก Use Case เงื่อนไข $\rightarrow$ Use Case หลัก
-3. **Activity Diagram:**
-   - วาดในมุมมองของ **ระบบ (System)** ไม่ใช่มุมมอง User
-   - รองรับกิจกรรมคู่ขนานด้วย **Fork & Join** แถบหนาสีดำ
-   - ควบคุมทางเลือกด้วย **Decision Node** สี่เหลี่ยมข้าวหลามตัดพร้อม Guard Condition `[...]`
+   - `<<include>>`: ชี้จาก Use Case หลัก $\rightarrow$ Use Case บังคับที่ต้องเรียกใช้เสมอ
+   - `<<extend>>`: ชี้จาก Use Case เงื่อนไขทางเลือก $\rightarrow$ Use Case หลัก
 
 ### 4. Computer Networks & Internet (ดร.วรลักษณ์)
 1. **การคำนวณ CRC:** ตั้งหารแบบ Modulo-2 XOR ไม่มีการยืมบิต ตัวหารความยาว $L$ บิต ต้องเติมศูนย์ต่อท้ายข้อมูล $L-1$ บิต เศษที่ได้คือ CRC
