@@ -3,8 +3,59 @@
 **รหัสไฟล์เสียง:** `20261006_094018.aac`  
 **วันที่บันทึก:** วันอังคารที่ 6 ตุลาคม 2569 เวลา 09:40:18 น. (ความยาว 45 นาที 59 วินาที)  
 **วิชา:** วิศวกรรมซอฟต์แวร์ (Software Engineering)  
-**ผู้สอน:** อาจารย์ผู้บรรยายประจำวิชา  
+**ผู้สอน:** ผศ.ดร.สุปีติ กุลจันทร์ (Supeeti Kulchan)  
+**ภาพถ่ายประกอบ:** 2 ภาพ (ภาพถ่ายกระดานขณะสอนสด 10:02 น. + แคปหน้าจอ Google Classroom)  
 **สถานะ:** ประมวลผลและถอดความสมบูรณ์ 100% (Verbatim & Strategic Analysis)
+
+---
+
+## 📸 ภาพถ่ายหลักฐานจริงจากห้องเรียนและประกาศทางการ (Classroom Visual Evidence)
+
+### 1. ภาพถ่ายกระดาน/จอแท็บเล็ตสดในคาบเรียน (06/10/2569 เวลา 10:02 น.)
+![ลายมือ ผศ.ดร.สุปีติ กุลจันทร์ บนจอภาพห้องเรียน](images/IMG_20261006_100254_624@1909396080.jpg)
+*(ตำแหน่งไฟล์: [`07_Software_Engineering/images/IMG_20261006_100254_624@1909396080.jpg`](file:///C:/Project/voice-text/07_Software_Engineering/images/IMG_20261006_100254_624@1909396080.jpg))*
+
+#### 🔍 ถอดความลายมืออาจารย์จากจอภาพ (Verbatim Board Transcription):
+```text
+1. Case study       Actor - Role
+           (a)      Student "..................."  ✓
+           (b)      Use case diagram
+
+2. Case study       Activity Diagram  ✓
+
+3. a  Equivalence Partitioning  }
+   b  Boundary Value Analysis   }
+  (c) ?
+
+4. Cyclomatic Complexity  ✓
+   Independent Path  ✓
+
+5. Agile / Scrum / Burndown Chart
+   a) Role
+   b) Burndown Chart
+      b1
+      b2
+      b3
+```
+
+---
+
+### 2. ประกาศทางการจาก Google Classroom โดย ผศ.ดร.สุปีติ กุลจันทร์
+![ประกาศ Google Classroom โดย ผศ.ดร.สุปีติ กุลจันทร์](images/Screenshot_2026-10-07_083942.png)
+*(ตำแหน่งไฟล์: [`07_Software_Engineering/images/Screenshot_2026-10-07_083942.png`](file:///C:/Project/voice-text/07_Software_Engineering/images/Screenshot_2026-10-07_083942.png))*
+
+#### 📢 ข้อความประกาศทางการใน Google Classroom:
+> **Supeeti Kulchan**  
+> *สรุปเรื่องการเตรียมตัวสอบ ดังนี้:*  
+> 1. ตรวจสอบวัน เวลา และสถานที่สอบด้วยตัวเอง  
+> 2. เตรียมเอกสาร dictionary (ข้อสอบเป็นภาษาอังกฤษ) บัตร นศ. หรือใบแทน เครื่องแต่งกายในการเข้าสอบให้พร้อม  
+> 3. หัวข้อที่ให้นักศึกษาเตรียมตัว:  
+>    3.1 การวิเคราะห์หา Actor และ Role โดยตามอ่าน case study  
+>    3.2 การเขียน Activity Diagram จาก Case Study  
+>    3.3 Equivalence Partitioning และ Boundary Value Analysis ที่อยู่ใน slide เรื่อง Software Testing  
+>    3.4 Cyclomatic Complexity ที่อยู่ใน Slide เรื่อง Software Testing  
+>    3.5 Agile, Scrum, Burndown Chart  
+> 4. ให้ส่งการบ้านให้เรียบร้อย  
 
 ---
 

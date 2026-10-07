@@ -1,7 +1,7 @@
 # สารบัญและรายงานวิเคราะห์ไฟล์เสียงฉบับสมบูรณ์ (Master Voice Index & Intelligence Report)
 **ตำแหน่งไดเรกทอรี:** `C:\Project\Voice\`  
 **วันที่ประมวลผลล่าสุด:** 7 ตุลาคม 2569  
-**จำนวนไฟล์เสียงทั้งหมด:** 44 รายการไฟล์เสียง (.aac / .m4a) + โฟลเดอร์ภาพประกอบ (`DSA-pic/` รวม 106 ภาพ + ภาพแล็บฐานข้อมูลใน `02_Database_System/` 3 ภาพ)  
+**จำนวนไฟล์เสียงทั้งหมด:** 44 รายการไฟล์เสียง (.aac / .m4a) + โฟลเดอร์ภาพประกอบ (`DSA-pic/` รวม 106 ภาพ + ภาพแล็บฐานข้อมูลใน `02_Database_System/` 3 ภาพ + ภาพกระดาน/ประกาศใน `07_Software_Engineering/` 2 ภาพ)  
 
 ---
 
@@ -81,7 +81,10 @@ C:\Project\Voice\
 │   ├── Transcript_20261006_SE_Final_Exam_5_Items_Leak_Scrum_Testing_Complexity.md <-- 🔥 บทวิเคราะห์ชี้แจงข้อสอบ Final 5 ข้อใหญ่ 100% EXPLICIT LEAKS, EP/BVA, Cyclomatic, Burn-down
 │   ├── SE20260915_092638.txt                                     <-- [ถอดความละเอียดทุกคำพูด] บรรยาย Use Case Diagram
 │   ├── 20260922_093313.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 Case Study ยืมคืนอุปกรณ์, Activity Diagram สัญลักษณ์ครบ
-│   └── 20261006_094018.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 ข้อสอบ Final 5 ข้อใหญ่, Open Book, Dictionary, เฉลยการบ้านยืมคืนอุปกรณ์แล็บ
+│   ├── 20261006_094018.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 ข้อสอบ Final 5 ข้อใหญ่, Open Book, Dictionary, เฉลยการบ้านยืมคืนอุปกรณ์แล็บ
+│   ├── images/
+│   │   ├── IMG_20261006_100254_624@1909396080.jpg           <-- 📸 ภาพถ่ายกระดานขณะบรรยายสด 10:02 น. สรุปข้อสอบ 5 ข้อ
+│   │   └── Screenshot_2026-10-07_083942.png                 <-- 📢 ภาพแคปหน้าจอประกาศทางการ Google Classroom
 │
 ├── 08_Computer_Networks_and_Internet\                            <-- วิชาเครือข่ายคอมพิวเตอร์และอินเทอร์เน็ต (Network & Link Layer)
 │   ├── README.md                                                 <-- สรุปวิชา, Distance Vector, BGP, CRC, MAC Protocols

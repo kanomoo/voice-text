@@ -55,6 +55,8 @@ flowchart TD
 ## 📂 เอกสารและไฟล์ที่เกี่ยวข้อง
 - [**คำถอดความทุกคำพูดฉบับเต็ม 06/10/2569 (`20261006_094018.txt`)**](file:///C:/Project/voice-text/07_Software_Engineering/20261006_094018.txt)
 - [**บทวิเคราะห์และแนวข้อสอบรั่ว 5 ข้อใหญ่ 06/10/2569 (`Transcript_20261006_SE_Final_Exam_5_Items_Leak_Scrum_Testing_Complexity.md`)**](file:///C:/Project/voice-text/07_Software_Engineering/Transcript_20261006_SE_Final_Exam_5_Items_Leak_Scrum_Testing_Complexity.md)
+- 📸 [**ภาพถ่ายกระดาน/จอแท็บเล็ตสด 10:02 น. (`IMG_20261006_100254_624@1909396080.jpg`)**](file:///C:/Project/voice-text/07_Software_Engineering/images/IMG_20261006_100254_624@1909396080.jpg)
+- 📢 [**ภาพแคปประกาศทางการ Google Classroom (`Screenshot_2026-10-07_083942.png`)**](file:///C:/Project/voice-text/07_Software_Engineering/images/Screenshot_2026-10-07_083942.png)
 - [**คำถอดความทุกคำพูด 22/09/2569 (`20260922_093313.txt`)**](file:///C:/Project/voice-text/07_Software_Engineering/20260922_093313.txt)
 - [**บทวิเคราะห์เจาะลึก 22/09/2569 (`Transcript_20260922_SE_UseCase_Activity_Diagram_Exam_Secrets.md`)**](file:///C:/Project/voice-text/07_Software_Engineering/Transcript_20260922_SE_UseCase_Activity_Diagram_Exam_Secrets.md)
 - [**คำถอดความทุกคำพูด 15/09/2569 (`SE20260915_092638.txt`)**](file:///C:/Project/voice-text/07_Software_Engineering/SE20260915_092638.txt)
