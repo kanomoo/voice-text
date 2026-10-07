@@ -27,6 +27,9 @@
 6. 📘 [Transcript_20260923_Graph_Theory_Representations_Exam_Leaks.md](file:///C:/Project/Voice/03_Data_Structures_and_Algorithms/Transcript_20260923_Graph_Theory_Representations_Exam_Leaks.md)  
    - **บทที่ 10: ทฤษฎีกราฟ, โครงสร้าง Adjacency Matrix/List และเจาะลึกแนวข้อสอบปลายภาค 45 เส้น (Graph Theory Exam Leaks & Shortcuts)**
    - วิเคราะห์เจาะลึก: ประกาศ Drop เกือบ 100 คน, งดเรียน/สอบประชุม IMF & World Bank 12-16 ต.ค. เลื่อนสอบ Final 19 ต.ค. - 1 พ.ย. 69 (35%), นิยาม Adjacent/Path, กฎเหล็กเขียน Path ห้ามใส่ลูกศร (0 คะแนน), ข้อสอบ Complete Graph 10 Vertices ตอบจำนวนเต็ม 45 เส้น, จุดหลอก Null Graph, ตาราง Matrix 7x7 เปลืองพื้นที่ 75.51% vs List 19 ช่อง (ประหยัด 61.22%), และข้อสอบเปรียบเทียบ 10 Vertices 20 Edges (Matrix 100 vs List 30 ช่อง ประหยัด 70%)
+7. 📘 [Transcript_20261007_ShortestPath_Assignment4_Final_Exam_Leaks.md](file:///C:/Project/voice-text/03_Data_Structures_and_Algorithms/Transcript_20261007_ShortestPath_Assignment4_Final_Exam_Leaks.md)  
+   - **🔥 บทที่ 11 Shortest Path, เฉลยละเอียด Assignment 4 และประกาศข้อสอบปลายภาค 7 ข้อ 70 คะแนน (Final Exam Leaks & 100% Solutions)**
+   - วิเคราะห์เจาะลึก: กติกา Open Book & เครื่องคิดเลขได้ (ห้ามมือถือ), คะแนนสอบ 70 หาร 2 เหลือ 35 คะแนน, Topological Sort Kahn's Algo Tracing, บทที่ 11 Unweighted Shortest Path (BFS + Queue), ตารางสถานะ Known, Dist, Path, การ Backtrack ย้อนหาเส้นทางและระยะทาง, เฉลยละเอียด Assignment 4 (ทั้งจุดเริ่ม A และ B), และเจาะลึกแนวข้อสอบปลายภาค 7 ข้อใหญ่ (Hashing, Binary Heap, Insertion Sort, Selection/Bubble Sort, Topological Sort, Shortest Path, คำถามย่อย Properties & Calculations)
 
 ---
 
@@ -49,6 +52,7 @@
 | `20260916_092007.aac` | 16/09/2569 09:20 น. | 44 นาที 43 วินาที | **Sorting Part 1:** สัญนิยมการเรียง, เจาะลึก Insertion Sort และตาราง Position Move, 3 Cases |
 | `20260916_102037.aac` | 16/09/2569 10:20 น. | 68 นาที 45 วินาที | **Sorting Part 2:** Selection Sort, range(0) ใน Python, Bubble Sort, สูตรลัด Inversion, ใบงานแบบฝึกหัดท้ายคาบ |
 | `20260923_091645.aac` | 23/09/2569 09:16 น. | 147 นาที 52 วินาที| **🔥 บทที่ 10 Graph Theory:** 14 ภาพกระดาน, ข้อสอบรั่ว Complete Graph 45 เส้น, Adjacency Matrix สิ้นเปลือง 75.51% vs List 19 ช่อง, จุดลวง Path ห้ามใส่ลูกศร (0 คะแนน), โจทย์ลวง Null Graph |
+| `20261007_092525.aac` | 07/10/2569 09:25 น. | 151 นาที 18 วินาที| **🔥 บทที่ 11 Shortest Path & ข้อสอบปลายภาค 7 ข้อ 70 คะแนน:** Topological Sort Tracing, Unweighted Shortest Path Algorithm, ตาราง Known, Dist, Path, เฉลย Assignment 4 ส่งเที่ยง, ประกาศแนวข้อสอบ Final 7 ข้อ Open Book + เครื่องคิดเลข |
 
 ---
 

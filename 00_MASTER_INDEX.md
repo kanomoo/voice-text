@@ -1,7 +1,7 @@
 # สารบัญและรายงานวิเคราะห์ไฟล์เสียงฉบับสมบูรณ์ (Master Voice Index & Intelligence Report)
 **ตำแหน่งไดเรกทอรี:** `C:\Project\Voice\`  
 **วันที่ประมวลผลล่าสุด:** 7 ตุลาคม 2569  
-**จำนวนไฟล์เสียงทั้งหมด:** 44 รายการไฟล์เสียง (.aac / .m4a) + โฟลเดอร์ภาพประกอบ (`DSA-pic/` รวม 106 ภาพ + ภาพแล็บฐานข้อมูลใน `02_Database_System/` 3 ภาพ + ภาพกระดาน/ประกาศใน `07_Software_Engineering/` 2 ภาพ)  
+**จำนวนไฟล์เสียงทั้งหมด:** 45 รายการไฟล์เสียง (.aac / .m4a) + โฟลเดอร์ภาพประกอบ (`DSA-pic/` รวม 106 ภาพ + ภาพแล็บฐานข้อมูลใน `02_Database_System/` 3 ภาพ + ภาพกระดาน/ประกาศใน `07_Software_Engineering/` 2 ภาพ)  
 
 ---
 
@@ -55,8 +55,10 @@ C:\Project\Voice\
 │   ├── Transcript_20260909_BinaryHeap_Implementation_Exam_Tips.md<-- บทวิเคราะห์โค้ด Python และโจทย์ DeleteMin 3 รอบ
 │   ├── Transcript_20260916_Comparison_Sorting_Insertion_Selection_Bubble_Exam_Trace.md <-- บทวิเคราะห์เจาะลึก Sorting 3 แบบ
 │   ├── Transcript_20260923_Graph_Theory_Representations_Exam_Leaks.md <-- 🔥 บทวิเคราะห์เจาะลึก Graph Theory, ข้อสอบรั่ว 14 ภาพ, Memory Waste 24.48% vs 75.51%
+│   ├── Transcript_20261007_ShortestPath_Assignment4_Final_Exam_Leaks.md <-- 🔥 บทวิเคราะห์บทที่ 11 Shortest Path, เฉลยละเอียด Assignment 4, ชี้แจงข้อสอบ Final 7 ข้อ 70 คะแนน (35%) Open Book + เครื่องคิดเลข
 │   ├── 20260902_091736.txt ถึง 20260916_102037.txt (12 ไฟล์)    <-- [ถอดความละเอียดทุกคำพูด] Hashing, Heap, Sorting
 │   ├── 20260923_091645.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 บทที่ 10 Graph, ทฤษฎีกราฟ, ข้อสอบรั่ว Complete Graph 45 เส้น
+│   ├── 20261007_092525.txt                                       <-- [ถอดความละเอียดทุกคำพูด] 🔥 บทที่ 11 Shortest Path, Unweighted Graph, เฉลย Assignment 4, ประกาศข้อสอบ Final 7 ข้อ
 │   └── DSA-pic/                                                  <-- คลังภาพกระดานและสไลด์ 106 ภาพ (เชื่อมโยงกับการบรรยาย)
 │
 ├── 04_Computer_Graphics_Design\                                  <-- วิชาคอมพิวเตอร์กราฟิกส์ (Adobe Illustrator)
@@ -146,6 +148,7 @@ C:\Project\Voice\
 | 42 | `database 29_9_2569 14.25.m4a` | 29/09/2569 | 68m 16s | `02_Database_System` | **🔥 DB Lab Week 2 & พรีเซนต์:** Foreign Key CASCADE vs RESTRICT, การบ้าน SQL (P.40-P.41+ เขียนมือ), นัดตรวจ ER พรุ่งนี้ 10:30 น., ผลสุ่มกงล้อพรีเซนต์โครงงานห้อง 307 และเลื่อนสอบปลายภาค |
 | 43 | `20261006_094018.aac` | 06/10/2569 | 45m 59s | `07_Software_Engineering` | **🔥 ชี้แจงข้อสอบปลายภาค 5 ข้อใหญ่ 100% EXPLICIT LEAKS:** Open Book + Dictionary, Case Study Actor & Role, Use Case Diagram, Activity Diagram, Software Testing (EP & BVA), Cyclomatic Complexity ($V(G)$ 3 วิธี) & Independent Paths, Agile/Scrum Roles, Burn-down Chart, เฉลยการบ้านระบบแล็บ และเกณฑ์ตัดเกรดอิงเกณฑ์ (A=80) |
 | 44 | `20261006_161408.aac` | 06/10/2569 | 7m 34s | `02_Database_System` | **🔥 กฎเหล็กสอบ Final & Negative Marking:** ข้อสอบปรนัย 80 ข้อ (40 คะแนน), Open Book, กฎติดลบ: ถูก 2 ข้อได้ 1 แต้ม / ผิด 2 ข้อหัก 1 แต้ม, ศัพท์เทคนิคอังกฤษ, เตรียมดินสอ 2B ฝน, ส่ง ER Diagram 2 ช่องใน Classroom (หลังมิดเทอม vs Final ฉบับแก้), เทคนิคพรีเซนต์ Total/Partial vs Cardinality |
+| 45 | `20261007_092525.aac` | 07/10/2569 | 151m 18s| `03_Data_Structures_and_Algorithms` | **🔥 บทที่ 11 Shortest Path & ข้อสอบปลายภาค 7 ข้อ 70 คะแนน:** Topological Sort Tracing, Unweighted Shortest Path (BFS + Queue), ตารางสถานะ Known, Dist, Path, การ Backtrack เส้นทาง, เฉลย Assignment 4 ส่งเที่ยง, ประกาศแนวข้อสอบ Final 7 ข้อ Open Book + เครื่องคิดเลข (35%) |
 
 ---
 
@@ -160,6 +163,7 @@ C:\Project\Voice\
 | **01/10/2569** | **ก่อน 12.00 น. (เที่ยง)** | Innovative Technopreneurs | **ส่งไฟล์ดิจิทัลทาง LINE กลุ่มวิชา:** เล่มรายงานฉบับสมบูรณ์ (PDF) และสไลด์นำเสนอ (PDF) |
 | **02/10/2569** | ในคาบเรียน | Innovative Technopreneurs | **ส่งรูปเล่มรายงานฉบับพิมพ์ Hard Copy ทุกกลุ่ม + พรีเซนต์กลุ่ม 1-9** |
 | **06/10/2569** | **13:00 น. เป็นต้นไป** | Database System | **🔥 นำเสนอโครงงาน Database ตอนเรียนวันอังคาร (Section 2 - 15 กลุ่ม):** ณ **ห้องทฤษฎี 307** (กลุ่มละ 15-20 นาที) + ส่งเล่มรายงาน Hard Copy + ส่งการบ้านแบบฝึกหัด SQL (เขียนมือ ห้ามพิมพ์) |
+| **07/10/2569** | **ก่อน 12:25 น.** | Data Structures & Algorithms | **🔥 ส่ง Assignment 4 ใน Google Classroom (5 คะแนน):** กราฟ Shortest Path จุดเริ่มต้น A แปลง Adjacency List และเขียนตาราง Known, Dist, Path, Queue แสดงรอยขีดฆ่าด้วยลายมือตนเอง |
 | **08/10/2569** | **09:00 น. เป็นต้นไป** | Database System | **🔥 นำเสนอโครงงาน Database ตอนเรียนวันพฤหัสบดี (Section 1 - 12 กลุ่ม):** ณ **ห้องทฤษฎี 307** (กลุ่มละ 15-20 นาที) + ส่งเล่มรายงาน Hard Copy + ส่งการบ้านแบบฝึกหัด SQL (เขียนมือ ห้ามพิมพ์) |
 | **09/10/2569** | ในคาบเรียน | Innovative Technopreneurs | **การนำเสนอผลงานรอบที่ 2 (กลุ่ม 10-18)** |
 | **09/10/2569** | สิ้นสุดคาบเรียน | ทุกวิชา | **วันสุดท้ายของการเรียนการสอนประจำภาคเรียนที่ 1/2569** |

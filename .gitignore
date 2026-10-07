@@ -1,0 +1,6 @@
+# Large audio files exceeding GitHub 100MB limit
+Success/20261007_092525.aac
+
+# Temp files
+*.tmp
+*.log
